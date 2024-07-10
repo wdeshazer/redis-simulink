@@ -18,3 +18,15 @@ Renamed options file '/Users/deshazere/Library/Application Support/MathWorks/MAT
 MEX configured to use 'Xcode with Clang' for C language compilation.
 ```
 
+```Xcode
+xcrun --show-sdk-path
+```
+
+[Finding XCode resources](https://andreasfertig.blog/2021/02/clang-and-gcc-on-macos-catalina-finding-the-include-paths/)
+
+Find __va_list_tag here:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+
+
+export CPLUS_INCLUDE_PATH=$(xcrun --show-sdk-path)/usr/include:$CPLUS_INCLUDE_PATH
