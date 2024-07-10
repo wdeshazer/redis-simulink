@@ -7,7 +7,11 @@ redisContext * REDIS_connectRedis(const char *host, int port){
             
     printf("Connecting to REDIS...\n");            
     redisContext *c = redisConnect(host, port);
-           
+
+    const char *input = "AUTH redis4IR&D";
+
+    redisReply *reply = REDIS_send_command(c, input);
+
     if (c == NULL || c->err) {
         printf("Error connecting to REDIS SERVER %s:%d: %s\n",host,port,c->errstr);                        
     }else{        

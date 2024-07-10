@@ -23,7 +23,7 @@ RedisValue.Alignment = -1;
 RedisValue.Elements = elems;
 assignin('base','RedisValue', RedisValue)
 
-redis_hostname = [uint8('127.0.0.1') 0];
+redis_hostname = [uint8('192.5.166.35') 0];
 redis_port = [uint8('6379') 0];
 
 numOutputs = 10;
