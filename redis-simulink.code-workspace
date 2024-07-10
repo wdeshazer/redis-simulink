@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#a0d279",
+			"titleBar.activeForeground": "#222222",
+			"titleBar.inactiveBackground": "#a0d279",
+			"titleBar.inactiveForeground": "#222222"
+		},
+		"files.exclude": {
+			"**/.git": false,
+			"**/.svn": false,
+			"**/.hg": false,
+			"**/CVS": false,
+			"**/.DS_Store": false,
+			"**/Thumbs.db": false,
+			"**/__pycache__": false
+		},
+		"explorerExclude.backup": {},
+		"treeExtended.gitignore": false
+	}
+}
