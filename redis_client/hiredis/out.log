@@ -1,0 +1,29 @@
+
+Errors encountered while building custom code simulation target for model 'REDIS_model'. Fix the errors in your custom code or disable 'Import custom code' if your custom code has incompatibilities.
+Caused by:
+In file included from /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.cpp:3:
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.h:39:89: error: unknown type name '__va_list_tag'
+DLL_EXPORT_CC extern sds sdscatvprintf_iDxhRNEK4TQqZFuLPUesJE(sds s, const char_T *fmt, __va_list_tag ap[1]);
+                                                                                        ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.h:72:112: error: unknown type name '__va_list_tag'
+DLL_EXPORT_CC extern int32_T redisvFormatCommand_iDxhRNEK4TQqZFuLPUesJE(char_T **target, const char_T *format, __va_list_tag ap[1]);
+                                                                                                               ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.h:100:112: error: unknown type name '__va_list_tag'
+DLL_EXPORT_CC extern int32_T redisvAppendCommand_iDxhRNEK4TQqZFuLPUesJE(redisContext *c, const char_T *format, __va_list_tag ap[1]);
+                                                                                                               ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.h:102:104: error: unknown type name '__va_list_tag'
+DLL_EXPORT_CC extern void *redisvCommand_iDxhRNEK4TQqZFuLPUesJE(redisContext *c, const char_T *format, __va_list_tag ap[1]);
+                                                                                                       ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.cpp:131:68: error: unknown type name '__va_list_tag'
+sds sdscatvprintf_iDxhRNEK4TQqZFuLPUesJE(sds s, const char_T *fmt, __va_list_tag ap[1])
+                                                                   ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.cpp:296:91: error: unknown type name '__va_list_tag'
+int32_T redisvFormatCommand_iDxhRNEK4TQqZFuLPUesJE(char_T **target, const char_T *format, __va_list_tag ap[1])
+                                                                                          ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.cpp:436:91: error: unknown type name '__va_list_tag'
+int32_T redisvAppendCommand_iDxhRNEK4TQqZFuLPUesJE(redisContext *c, const char_T *format, __va_list_tag ap[1])
+                                                                                          ^
+/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/slprj/_slcc/iDxhRNEK4TQqZFuLPUesJE/slcc_interface_iDxhRNEK4TQqZFuLPUesJE.cpp:446:83: error: unknown type name '__va_list_tag'
+void *redisvCommand_iDxhRNEK4TQqZFuLPUesJE(redisContext *c, const char_T *format, __va_list_tag ap[1])
+                                                                                  ^
+8 errors generated.
