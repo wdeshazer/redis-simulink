@@ -1,1 +1,1 @@
-mex -compatibleArrayDims -DDEBUG -v REDIS.cpp REDIS_custom.cpp REDIS_wrapper.cpp -L./hiredis -lhiredis
+mex -R2018a -DDEBUG -v REDIS.cpp REDIS_custom.cpp REDIS_wrapper.cpp -L./hiredis -lhiredis
