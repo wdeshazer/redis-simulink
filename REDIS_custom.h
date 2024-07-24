@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "simstruc.h"
-#include "hiredis/hiredis.h"
 #include "REDIS_bus.h"
+
+/* Forward declarations for structs defined elsewhere */
+struct redisContext;
+struct redisReply;
 
 extern redisContext * REDIS_connectRedis(const char *host, int port);
 extern void REDIS_redis_disconnect(redisContext *c);

@@ -1,4 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "REDIS_custom.h"
+#include "hiredis/hiredis.h"
 
 char *lastError;
 
