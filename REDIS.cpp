@@ -193,7 +193,7 @@ extern void REDIS_Outputs_wrapper(void *S,
      EXIT_POINT:
       if (validParam) {
           char parameterErrorMsg[1024];
-          sprintf(parameterErrorMsg, "The data type and or complexity of parameter  %d does not match the "
+          mexPrintf(parameterErrorMsg, "The data type and or complexity of parameter  %d does not match the "
                   "information specified in the S-function Builder dialog. "
                   "For non-double parameters you will need to cast them using int8, int16, "
                   "int32, uint8, uint16, uint32 or boolean.", paramIndex + 1);
