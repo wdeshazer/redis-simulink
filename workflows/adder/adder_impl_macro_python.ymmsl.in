@@ -1,0 +1,6 @@
+ymmsl_version: v0.1
+
+implementations:
+  macro:
+    executable: python
+    args: ${CMAKE_CURRENT_SOURCE_DIR}/macro.py

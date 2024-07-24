@@ -1,0 +1,7 @@
+ymmsl_version: v0.1
+
+# helloworld implementation for C++ micro
+
+implementations:
+  micro:
+    executable: ${CMAKE_CURRENT_BINARY_DIR}/helloworld_cpp

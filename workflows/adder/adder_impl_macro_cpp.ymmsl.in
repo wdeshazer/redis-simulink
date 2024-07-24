@@ -1,0 +1,5 @@
+ymmsl_version: v0.1
+
+implementations:
+  macro:
+    executable: ${CMAKE_CURRENT_BINARY_DIR}/macro_cpp

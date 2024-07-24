@@ -1,0 +1,22 @@
+ymmsl_version: v0.1
+
+model:
+  name: adder
+  components:
+    macro: macro
+    micro: micro
+  conduits:
+    macro.control_out: micro.control_in
+    micro.state_out: macro.state_in
+
+
+settings:
+  t_max: 2.0
+  dt: 1.0
+  muscle_remote_log_level: DEBUG
+
+resources:
+  macro:
+    threads: 1
+  micro:
+    threads: 1

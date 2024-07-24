@@ -1,0 +1,6 @@
+ymmsl_version: v0.1
+
+implementations:
+  macro:
+    executable: matlab
+    args: -sd ${CMAKE_CURRENT_SOURCE_DIR}/

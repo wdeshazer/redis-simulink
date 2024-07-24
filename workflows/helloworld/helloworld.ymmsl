@@ -1,0 +1,28 @@
+ymmsl_version: v0.1
+
+# Helloworld actors
+#
+# Example actors integrating IMAS with MUSCLE3. The actors communicate through
+# IDS structures, sending and receiving "Hello world"
+#
+# This file does not define actual implementation. They are available in
+# separate `helloworld_impl_<language>_<component>.ymmsl` files.
+
+model:
+  name: helloworld
+  components:
+    macro: macro
+    micro: micro
+  conduits:
+    macro.workflow_out: micro.initial_workflow_in
+    micro.final_workflow_out: macro.workflow_in
+settings:
+  t_max: 2.0
+  dt: 1.0
+  muscle_remote_log_level: DEBUG
+
+resources:
+  macro:
+    threads: 1
+  micro:
+    threads: 1
