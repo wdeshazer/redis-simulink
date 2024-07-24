@@ -21,6 +21,9 @@ To ensure that the correct compilation is happening select `macos-clang-arm64`
 export LIBRARY_PATH=$(xcrun --show-sdk-path)/usr/lib:$LIBRARY_PATH
 export LIBRARY_PATH=/usr/lib:$LIBRARY_PATH
 export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH
+export LIBRARY_PATH=/usr/local/lib/hiredis:$LIBRARY_PATH
 
 export CPLUS_INCLUDE_PATH=$(xcrun --show-sdk-path)/usr/include:$CPLUS_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=/usr/local/include/
+export CPLUS_INCLUDE_PATH=/usr/local/include/:$CPLUS_INCLUDE_PATH
+
+export DYLD_LIBRARY_PATH=$LIBRARY_PATH
