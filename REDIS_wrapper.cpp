@@ -1,5 +1,6 @@
 #include <math.h>
 #include "REDIS_custom.h"
+#include "hiredis/hiredis.h"
 
 /*
  * Output functions
@@ -76,7 +77,7 @@ void REDIS_Outputs_parse_response(SimStruct *S, redisContext *c, redisReply *rep
                         
             // Convert integer to string (max 30 bytes)                        
             char num_str[30];
-            sprintf(num_str, "%llu", reply->integer);
+            mexPrintf(num_str, "%llu", reply->integer);
             memcpy(data, &num_str, strlen(num_str));              
             *numElements = 1;
             
