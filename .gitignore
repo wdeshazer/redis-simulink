@@ -4,3 +4,5 @@ slprj
 previous_slx
 matlab_build_logs
 REDIS_model.slxc
+
+REDIS_model.xml
