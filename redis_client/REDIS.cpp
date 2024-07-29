@@ -19,7 +19,7 @@
 #define IN_0_WORDLENGTH      8
 #define IN_0_FIXPOINTSCALING 1
 #define IN_0_FRACTIONLENGTH  9
-#define IN_0_BIAS            0
+#define IN_0_BIAS            0 
 #define IN_0_SLOPE           0.125
 
 #define NUM_OUTPUTS          5

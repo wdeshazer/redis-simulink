@@ -1,10 +1,10 @@
 function redis_datatypes( )
 
-% Bus object: RedisValue 
+% Bus object: RedisValue
 clear elems;
 elems(1) = Simulink.BusElement;
 elems(1).Name = 'value';
-elems(1).Dimensions = [255 1];
+elems(1).Dimensions = [255, 1];
 elems(1).DimensionsMode = 'Fixed';
 elems(1).DataType = 'uint8';
 elems(1).SampleTime = -1;
@@ -21,10 +21,14 @@ RedisValue.Description = '';
 RedisValue.DataScope = 'Auto';
 RedisValue.Alignment = -1;
 RedisValue.Elements = elems;
-assignin('base','RedisValue', RedisValue)
+assignin('base','RedisValue', RedisValue);
 
-redis_hostname = [uint8('192.5.166.35') 0];
-redis_port = [uint8('6379') 0];
+[redisHost, redisPort, redisKey] = readConfigFile();
+
+address = resolvehost(redisHost, 'address');
+redis_hostname = [uint8(address) 0];
+redis_port = [uint8(redisPort) 0];
+redis_key = [uint8(redisKey) 0];
 
 numOutputs = 10;
 valueSize = 255;
@@ -33,6 +37,7 @@ assignin('base','numOutputs', numOutputs);
 assignin('base','valueSize', valueSize);
 assignin('base','redis_port', redis_port);
 assignin('base','redis_hostname', redis_hostname);
+assignin('base','redis_key',redis_key);
 
 end
 
