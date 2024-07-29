@@ -26,3 +26,29 @@ sfnew redis_client
 | 3. | Symbols pane   | To the right of the canvas, add new data, events, and messages to the chart and resolve any undefined or unused symbols. |
 
 ![Stateflow IDE](img/Stateflow-IDE.png)
+
+### State Action Types
+
+State actions - define what a Stateflow chart does while a state is active.
+
+The most common types of state actions are entry, during, and exit actions:
+
+| State Action Type |  Function |
+|-------------------|-----------|
+| `entry`  (`en`)   |  action during state activation (relative t0) |
+| `during` (`du`)   |  action on a time step - not activation (relative t0) nor exit (relative tfinal) |
+| `exit`   (`ex`)   | action during state de-activation (relative tfinal)|
+
+### Transition Label Types
+
+Transition labels - define what a Stateflow chart does when the active state changes
+
+#### Condition-ConditionAction Label Type
+
+```zsh
+[Condition]{ConditionAction}
+```
+| Label elements   | Function |
+|------------------|----------|
+|`Condition`       | Boolean specifying transition |
+|`ConditionAction` | Guards the transition is true - 
