@@ -1,0 +1,21 @@
+{
+    "C_Cpp.default.includePath": [
+        "/Applications/MATLAB_R2024a.app/extern/include",
+        "/usr/local/include",
+        "${default}"
+    ],
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.default.browse.path": [
+        "/Applications/MATLAB_R2024a.app/extern/include",
+        "${workspace}/hiredis",
+        "${workspace}"
+    ],
+    "editor.fontSize": 16,
+    "clangd.arguments": [
+        "-I/Applications/MATLAB_R2024a.app/extern/include",
+        "-I/usr/local/include"
+    ],
+    "clangd.fallbackFlags": [
+        "-I/usr/local/include"
+    ]
+}

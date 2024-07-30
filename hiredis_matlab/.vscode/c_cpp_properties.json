@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Matlab",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}",
+                "${workspaceFolder}/../redis_client/hiredis",
+                // "${workspaceFolder}/redis_client/**",
+                "/Applications/MATLAB_R2024a.app/extern/include",
+                "/Applications/MATLAb_R2024a.app/simulink/include",
+                "/Applications/MATLAB_R2024a.app/toolbox/shared_dl_targets_src/api/"
+            ],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
