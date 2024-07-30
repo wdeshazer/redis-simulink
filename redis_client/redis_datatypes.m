@@ -28,7 +28,7 @@ assignin('base','RedisValue', RedisValue);
 address = resolvehost(redisHost, 'address');
 redis_hostname = [uint8(address) 0];
 redis_port = [uint8(redisPort) 0];
-redis_key = [uint8(redisKey) 0];
+redis_auth_cmd = [uint8(['AUTH ' redisKey]) 0];
 
 numOutputs = 10;
 valueSize = 255;
@@ -37,7 +37,7 @@ assignin('base','numOutputs', numOutputs);
 assignin('base','valueSize', valueSize);
 assignin('base','redis_port', redis_port);
 assignin('base','redis_hostname', redis_hostname);
-assignin('base','redis_key',redis_key);
+assignin('base','redis_auth_cmd',redis_auth_cmd);
 
 end
 
