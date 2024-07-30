@@ -1,0 +1,147 @@
+>> Hiredis_Interface_gen
+Warning: Some C++ language constructs in the files for generating interface file
+are not supported and not imported.
+
+Did not add member 'element' to class 'redisReply' at hiredis.h:131.
+  'redisReply * *' is not a supported type.
+
+Did not add member 'connect_timeout' to class 'redisOptions' at hiredis.h:194.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add member 'command_timeout' to class 'redisOptions' at hiredis.h:197.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add member 'endpoint' to class 'redisOptions' at hiredis.h:211.
+  'redisOptions::#unnamed#' is not a supported type.
+
+Did not add member 'privdata' to class 'redisOptions' at hiredis.h:214.
+  'void *' is not a supported type.
+
+Did not add member 'free_privdata' to class 'redisOptions' at hiredis.h:215.
+  'void(*)(void *)' as data member or return type not supported.
+
+Did not add member 'push_cb' to class 'redisOptions' at hiredis.h:218.
+  'void(*)(void *, void *)' as data member or return type not supported.
+
+Did not add member 'async_push_cb' to class 'redisOptions' at hiredis.h:219.
+  'void(*)(redisAsyncContext *, void *)' as data member or return type not
+supported.
+
+Did not add member 'close' to class 'redisContextFuncs' at hiredis.h:242.
+  'void(*)(redisContext *)' as data member or return type not supported.
+
+Did not add member 'free_privctx' to class 'redisContextFuncs' at hiredis.h:243.
+  'void(*)(void *)' as data member or return type not supported.
+
+Did not add member 'async_read' to class 'redisContextFuncs' at hiredis.h:244.
+  'void(*)(redisAsyncContext *)' as data member or return type not supported.
+
+Did not add member 'async_write' to class 'redisContextFuncs' at hiredis.h:245.
+  'void(*)(redisAsyncContext *)' as data member or return type not supported.
+
+Did not add member 'read' to class 'redisContextFuncs' at hiredis.h:251.
+  'ssize_t(*)(redisContext *, char *, size_t)' as data member or return type not
+supported.
+
+Did not add member 'write' to class 'redisContextFuncs' at hiredis.h:252.
+  'ssize_t(*)(redisContext *)' as data member or return type not supported.
+
+Did not add member 'task' to class 'redisReader' at read.h:105.
+  'redisReadTask * *' is not a supported type.
+
+Did not add member 'reply' to class 'redisReader' at read.h:109.
+  'void *' is not a supported type.
+
+Did not add member 'createString' to class 'redisReplyObjectFunctions' at
+read.h:86.
+  'void *(*)(redisReadTask const *, char *, size_t)' as data member or return
+type not supported.
+
+Did not add member 'createArray' to class 'redisReplyObjectFunctions' at
+read.h:87.
+  'void *(*)(redisReadTask const *, size_t)' as data member or return type not
+supported.
+
+Did not add member 'createInteger' to class 'redisReplyObjectFunctions' at
+read.h:88.
+  'void *(*)(redisReadTask const *, long long)' as data member or return type
+not supported.
+
+Did not add member 'createDouble' to class 'redisReplyObjectFunctions' at
+read.h:89.
+  'void *(*)(redisReadTask const *, double, char *, size_t)' as data member or
+return type not supported.
+
+Did not add member 'createNil' to class 'redisReplyObjectFunctions' at
+read.h:90.
+  'void *(*)(redisReadTask const *)' as data member or return type not
+supported.
+
+Did not add member 'createBool' to class 'redisReplyObjectFunctions' at
+read.h:91.
+  'void *(*)(redisReadTask const *, int)' as data member or return type not
+supported.
+
+Did not add member 'freeObject' to class 'redisReplyObjectFunctions' at
+read.h:92.
+  'void(*)(void *)' as data member or return type not supported.
+
+Did not add member 'privdata' to class 'redisReader' at read.h:112. 
+  'void *' is not a supported type.
+
+Did not add member 'connect_timeout' to class 'redisContext' at hiredis.h:268.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add member 'command_timeout' to class 'redisContext' at hiredis.h:269.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add member 'tcp' to class 'redisContext' at hiredis.h:275.
+  C++ symbol 'redisContext::#unnamed#' at  hiredis.h:271 is in an unnamed
+namespace or class.
+
+Did not add member 'unix_sock' to class 'redisContext' at hiredis.h:279.
+  C++ symbol 'redisContext::#unnamed#' at  hiredis.h:277 is in an unnamed
+namespace or class.
+
+Did not add member 'privdata' to class 'redisContext' at hiredis.h:287.
+  'void *' is not a supported type.
+
+Did not add member 'free_privdata' to class 'redisContext' at hiredis.h:288.
+  'void(*)(void *)' as data member or return type not supported.
+
+Did not add member 'privctx' to class 'redisContext' at hiredis.h:292.
+  'void *' is not a supported type.
+
+Did not add member 'push_cb' to class 'redisContext' at hiredis.h:295.
+  'void(*)(void *, void *)' as data member or return type not supported.
+
+Did not add 'redisvFormatCommand' at hiredis.h:140.
+  C++ Source information for type '__va_list_tag' is not available.
+
+Did not add 'redisConnectWithTimeout' at hiredis.h:300.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add 'redisConnectUnixWithTimeout' at hiredis.h:307.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add 'redisSetPushCallback' at hiredis.h:322.
+  'void(*)(void *, void *)' as data member or return type not supported.
+
+Did not add 'redisSetTimeout' at hiredis.h:323.
+  Type 'timeval' is from std namespace or system header and is not supported.
+
+Did not add 'redisvAppendCommand' at hiredis.h:345.
+  C++ Source information for type '__va_list_tag' is not available.
+
+Did not add 'redisvCommand' at hiredis.h:354.
+  C++ Source information for type '__va_list_tag' is not available.
+ 
+Deleted file '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/hiredis_matlab/definehiredis.m'.
+C++ compiler set to 'Xcode Clang++'.
+Definition file definehiredis.m contains definitions for 79 constructs supported by MATLAB.
+- 45 constructs are fully defined.
+- 34 constructs partially defined and commented out.
+
+To include the 34 undefined constructs in the interface, uncomment and complete the definitions in definehiredis.m.
+To build the interface, call build(definehiredis).
+>> 
