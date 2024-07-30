@@ -16,6 +16,6 @@ function [redisHost, redisPort, redisKey] = readConfigFile(redisConfigPath)
 
     lines = strsplit(fileContent, '\n'); % Split by line
     redisHost = strtrim(lines{1}); % Server name
-    redisPort = str2double(strtrim(lines{2})); % Port number
+    redisPort = strtrim(lines{2}); % Port number
     redisKey = strtrim(lines{3}); % Password/key
 end
