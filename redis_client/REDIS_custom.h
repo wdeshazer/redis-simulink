@@ -6,6 +6,7 @@ struct redisContext;
 struct redisReply;
 
 extern redisContext * REDIS_connectRedis(const char *host, int port);
+extern REDIS_authenticate(redisContext *c, const char *passwd)
 extern void REDIS_redis_disconnect(redisContext *c);
 extern redisReply * REDIS_send_command(redisContext *c, const char *cmd);
 

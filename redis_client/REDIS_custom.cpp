@@ -19,6 +19,28 @@ redisContext * REDIS_connectRedis(const char *host, int port){
     return c;
 }
 
+
+void REDIS_authenticate(redisContext *c, const char *passwd) {
+
+    const char *cmd = "AUTH ";
+    size_t size = strlen(cmd) + strlen(aString) + 1; // +1 for the null terminator
+    char *buffer = (char*)malloc(size);
+
+    if (!buffer) {
+        return NULL; // Memory allocation failed
+    }
+
+    int success = snprintf(buffer, size, "%s%s", cmd, aString);
+
+    if (success < 0) {
+        free(buffer); // Clean up memory if snprintf fails
+        return NULL;
+    }
+
+    return buffer;
+
+}
+
 // Disconnect from REDIS
 void REDIS_redis_disconnect(redisContext *c)
 {
