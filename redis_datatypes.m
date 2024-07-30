@@ -1,6 +1,6 @@
 function redis_datatypes( )
 
-% Bus object: RedisValue 
+% Bus object: RedisValue
 clear elems;
 elems(1) = Simulink.BusElement;
 elems(1).Name = 'value';
@@ -23,7 +23,11 @@ RedisValue.Alignment = -1;
 RedisValue.Elements = elems;
 assignin('base','RedisValue', RedisValue)
 
-redis_hostname = [uint8('192.5.166.35') 0];
+redisHost = 'europa.gat.com'
+address = resolvehost(redisHost, 'address')
+redis_hostname = [uint8(address) 0];
+
+% redis_hostname = [uint8('192.5.166.35') 0];
 redis_port = [uint8('6379') 0];
 
 numOutputs = 10;
