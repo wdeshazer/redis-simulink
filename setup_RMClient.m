@@ -1,12 +1,12 @@
 %% sfHiredis Project Creation
 % This project builds the Hiredis API
-projectName = 'sfHiredis';
-projectPkg = 'SfHiredis.prj';
+projectName = 'RSClient';
+projectPkg = 'RSClient.prj';
 
 % The relative path is built off of MATLAB's default userpath
 % `userpath` defaults to `~/MATLAB/projects` 
 % To redefine that `userpath(newpath)`. Note - This is global.
-relPath = 'IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfHiredis';
+relPath = 'IRAD-1340-API/redis-simulink';
 projectFolder = fullfile(userpath,relPath);
 projectPkgPath =  fullfile(projectFolder, projectPkg);
 
