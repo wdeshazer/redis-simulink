@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[8, 42, 1360, 843]</P>
+  <P Name="Open">on</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">1</P>
+  <Block BlockType="S-Function" Name="S-Function Builder" SID="1">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[215, 204, 405, 336]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="CopyFcn">set_param(gcbh,&apos;LinkStatus&apos;,&apos;none&apos;)</P>
+    <P Name="OpenFcn">sfunctionwizard(gcbh)</P>
+    <P Name="FunctionName">redis</P>
+    <P Name="SFunctionModules">redis_wrapper.c  </P>
+    <P Name="WizardData" Ref="bdmxdata:WizardData_1"/>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">off</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Mask>
+      <Type>S-Function Builder</Type>
+      <Display RunInitForIconRedraw="on" IconUnits="normalized">plot(val(:,1),val(:,2)),disp(sys),port_label(&apos;input&apos;,1,&apos;u0&apos;),port_label(&apos;output&apos;,1,&apos;y0&apos;)</Display>
+      <Description>Simulink:masks:SFunctionBuilder_MD</Description>
+      <Initialization>val = [[.9  0.75 0.75 1 1 .9 .9 1]&apos;,[1 1 0.75 0.75 .9 .9 1 .9]&apos;];try , sys = get_param(gcb,&apos;SfunBuilderFcnName&apos;);if isempty(sys), sys = get_param(gcb,&apos;FunctionName&apos;); end,catch, sys = get_param(gcb,&apos;FunctionName&apos;); end</Initialization>
+      <Capabilities>slmaskedcaps(gcbh)</Capabilities>
+    </Mask>
+  </Block>
+</System>

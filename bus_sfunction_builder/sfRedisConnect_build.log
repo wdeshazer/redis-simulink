@@ -1,0 +1,27 @@
+## 'sfRedisConnect.c' created successfully
+### 'sfRedisConnect_wrapper.c' created successfully
+In file included from /UserssfRedisConnect_wrapper.c:13: In file included from /Usershiredis/hiredis.h:45: /Usershiredis/sds.h:239:20: warning: 'format' attribute argument not supported: mexPrintf_800 [-Wignored-attributes] __attribute__((format(printf, 2, 3)));
+
+^ /UserssfRedisConnect_wrapper.c:30:23: error: conflicting types for 'redisReconnect' extern redisContext * redisReconnect(const char *host, int port);
+
+^ /Usershiredis/hiredis.h:320:5: note: previous declaration is here int redisReconnect(redisContext *c);
+
+^ /UserssfRedisConnect_wrapper.c:44:25: error: use of undeclared identifier 'host' *ctx = redisConnect(host, port);
+
+^ /UserssfRedisConnect_wrapper.c:44:31: error: use of undeclared identifier 'port' *ctx = redisConnect(host, port);
+
+^ /UserssfRedisConnect_wrapper.c:47:63: error: use of undeclared identifier 'host' printf("Error connecting to REDIS SERVER %s:%d: %s\n",host,port,ctx->errstr);
+
+^ /UserssfRedisConnect_wrapper.c:47:68: error: use of undeclared identifier 'port' printf("Error connecting to REDIS SERVER %s:%d: %s\n",host,port,ctx->errstr);
+
+^ /UserssfRedisConnect_wrapper.c:53:40: error: use of undeclared identifier 'passwd' size_t size = strlen(cmd) + strlen(passwd) + 1; // +1 for the null terminator
+
+^ /UserssfRedisConnect_wrapper.c:57:9: error: void function 'sfRedisConnect_Start_wrapper' should not return a value [-Wreturn-type] return NULL; // Memory allocation failed
+
+^ ~~~~ /UserssfRedisConnect_wrapper.c:60:55: error: use of undeclared identifier 'passwd' int success = snprintf(buffer, size, "%s%s", cmd, passwd);
+
+^ /UserssfRedisConnect_wrapper.c:64:9: error: void function 'sfRedisConnect_Start_wrapper' should not return a value [-Wreturn-type] return NULL;
+
+^ ~~~~ /UserssfRedisConnect_wrapper.c:67:30: error: use of undeclared identifier 'passwd' reply = sendCommand(ctx, passwd);
+
+^ 1 warning and 10 errors generated.
