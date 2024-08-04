@@ -42,10 +42,10 @@ end
 
 fprintf("Compiling the HiRedis API using Mex\n")
 
-[proj_dir, root_dir] = 
-   announce('Project Directory', proj_dir, 1)
 
-hiredis_dir = proj_dir + 'hiredis';
+   announce('Project Directory', project.ProjectStartupFolder, 1)
+
+hiredis_dir = project.ProjectStartupFolder + 'hiredis';
    hiredis_dir_label = 'HiRedis Source Directory';
    announce(hiredis_dir_label, hiredis_dir, 1)
 
