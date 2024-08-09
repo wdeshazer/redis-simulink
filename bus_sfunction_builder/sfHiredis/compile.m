@@ -19,6 +19,5 @@ comp.report()
 % mex('-v', '-R2018a', comp.iPath,comp.hfile('hiredis.h'), comp.hiredis_lib)
 
 % compile just the original
-mex -v -R2018a -I./hiredis_mex hiredis_mex/hiredis.h ../../redis_client/hiredis/libhiredis.dylib
 
-mex -v -R2018a -I./hiredis_mex hiredis_mex/hiredis.h ../../redis_client/hiredis/libhiredis.dylib
+mex 
