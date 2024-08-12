@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info>
+    <Category UUID="3c15d547-2cad-4609-a06f-35389bbf7416">
+        <Label UUID="0ecc1f8f-bb8a-4e36-b713-667cf033907e"/>
+    </Category>
+    <Category UUID="FileClassCategory">
+        <Label UUID="e5889f1c-f355-4f07-accf-22934b3b7602"/>
+    </Category>
+</Info>

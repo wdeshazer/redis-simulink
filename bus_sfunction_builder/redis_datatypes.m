@@ -24,7 +24,6 @@ RedisValue.Elements = elems;
 assignin('base','RedisValue', RedisValue);
 
 [redisHost, redisPort, redisKey] = readConfigFile();
-
 address = resolvehost(redisHost, 'address');
 redis_hostname = [uint8(address) 0];
 redis_port = [uint8(redisPort) 0];

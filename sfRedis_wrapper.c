@@ -14,11 +14,11 @@
 /* %%%-SFUNWIZ_wrapper_includes_Changes_END --- EDIT HERE TO _BEGIN */
 
 /*
- * Create external references here.  
+ * Create external references here.
  *
  */
 /* %%%-SFUNWIZ_wrapper_externs_Changes_BEGIN --- EDIT HERE TO _END */
- 
+
 /* %%%-SFUNWIZ_wrapper_externs_Changes_END --- EDIT HERE TO _BEGIN */
 
 /*
@@ -34,9 +34,9 @@ void sfRedis_Start_wrapper(real_T *xC,
 			SimStruct *S)
 {
 /* %%%-SFUNWIZ_wrapper_Start_Changes_BEGIN --- EDIT HERE TO _END */
-ssPrintf("Initiating a Connection to REDIS...\n");
+    ssPrintf("Initiating a Connection to REDIS...\n");
 
-    // This could be more informative. Like run Matlab 
+    // This could be more informative. Like run Matlab
     if (host == NULL || port == NULL || passwd == NULL) {
         char buffer[120];
         sprintf(buffer, "Missing authentication info. Run Matlab startup or setup/repair config");
@@ -67,14 +67,14 @@ ssPrintf("Initiating a Connection to REDIS...\n");
         pW[0] = ctx;
     }
 
-    const char *cmd = "AUTH "; 
+    const char *cmd = "AUTH ";
     int NULL_LENGTH = 1;
-    
+
     size_t size = strlen(cmd) + strlen((const char*)passwd) + NULL_LENGTH;
     char *buffer = (char*)malloc(size);
 
     redisReply *reply = redisCommand(ctx, (const char*)passwd);
-    
+
 
     // We could get sophisticated with the connection messaging so that it detects
     // the precise error.
@@ -86,10 +86,11 @@ ssPrintf("Initiating a Connection to REDIS...\n");
     if (success < 0) {
 
         char *fmt = "Failed AUTH: no reply informtation. Check Network Connection (VPN)";
-        int nmsg_main = strlen(fmt) - strlen("%s%d%s"); 
+        int nmsg_main = strlen(fmt) - strlen("%s%d%s");
 
         // File: hiredis/hiredis.h
-        // 261:     char errstr[128]; /* String representation of error when applicable */        int n_host = 253, n_port = 4, REDIS_ERR_LENGTH = 128, NULL_LENGTH = 1;
+        // 261:     char errstr[128]; /* String representation of error when applicable */
+        int n_host = 253, n_port = 4, REDIS_ERR_LENGTH = 128, NULL_LENGTH = 1;
         int n_err_msg = nmsg_main + REDIS_ERR_LENGTH + n_host + n_port + NULL_LENGTH;
 
         size_t size=n_err_msg;
@@ -193,7 +194,7 @@ void sfRedis_Terminate_wrapper(real_T *xC,
 			SimStruct *S)
 {
 /* %%%-SFUNWIZ_wrapper_Terminate_Changes_BEGIN --- EDIT HERE TO _END */
-if (ssGetPWork(S) != NULL) {  
+if (ssGetPWork(S) != NULL) {
     redisContext *ctx = (redisContext *) ssGetPWorkValue(S,0);
     if (ctx != NULL) {
         redisFree(ctx);

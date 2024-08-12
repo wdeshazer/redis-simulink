@@ -20,7 +20,7 @@ makeInfo.linkLibsObjs = {};
 sfBuilderBlocksByMaskType = find_system(bdroot,'FollowLinks','on','LookUnderMasks','on','MaskType','S-Function Builder');
 sfBuilderBlocksByCallback = find_system(bdroot,'OpenFcn','sfunctionwizard(gcbh)');
 sfBuilderBlocksDeployed   = find_system(bdroot,'BlockType','S-Function','SFunctionDeploymentMode','on');
-sfBuilderBlocks = {sfBuilderBlocksByMaskType{:} sfBuilderBlocksByCallback{:} sfBuilderBlocksDeployed{:}};
+sfBuilderBlocks = [sfBuilderBlocksByMaskType(:)' sfBuilderBlocksByCallback(:)' sfBuilderBlocksDeployed(:)'];
 sfBuilderBlocks = unique(sfBuilderBlocks);
 if isempty(sfBuilderBlocks)
    return;
@@ -45,21 +45,21 @@ function updatedMakeInfo = UpdateMakeInfo(makeInfo,SFBInfoStruct)
 updatedMakeInfo = {};
 if isfield(makeInfo,'includePath')
    if isfield(SFBInfoStruct,'includePath')
-      updatedMakeInfo.includePath = {makeInfo.includePath{:} SFBInfoStruct.includePath{:}};
+      updatedMakeInfo.includePath = [makeInfo.includePath(:)' SFBInfoStruct.includePath(:)'];
    else
       updatedMakeInfo.includePath = {makeInfo.includePath{:}};
    end
 end
 if isfield(makeInfo,'sourcePath')
    if isfield(SFBInfoStruct,'sourcePath')
-      updatedMakeInfo.sourcePath = {makeInfo.sourcePath{:} SFBInfoStruct.sourcePath{:}};
+      updatedMakeInfo.sourcePath = [makeInfo.sourcePath(:)' SFBInfoStruct.sourcePath(:)'];
    else
       updatedMakeInfo.sourcePath = {makeInfo.sourcePath{:}};
    end
 end
 if isfield(makeInfo,'linkLibsObjs')
    if isfield(SFBInfoStruct,'additionalLibraries')
-      updatedMakeInfo.linkLibsObjs = {makeInfo.linkLibsObjs{:} SFBInfoStruct.additionalLibraries{:}};
+      updatedMakeInfo.linkLibsObjs = [makeInfo.linkLibsObjs(:)' SFBInfoStruct.additionalLibraries(:)'];
    else
       updatedMakeInfo.linkLibsObjs = {makeInfo.linkLibsObjs{:}};
    end
