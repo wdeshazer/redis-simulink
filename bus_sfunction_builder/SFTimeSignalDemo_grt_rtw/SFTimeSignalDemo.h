@@ -7,14 +7,14 @@
  *
  * Code generation for model "SFTimeSignalDemo".
  *
- * Model version              : 1.16
+ * Model version              : 1.47
  * Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
- * C source code generated on : Fri Aug  9 05:00:50 2024
+ * C source code generated on : Mon Aug 12 04:40:31 2024
  *
  * Target selection: grt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
  * Embedded hardware selection: Intel->x86-64 (Windows64)
- * Code generation objectives: Unspecified
+ * Code generation objective: Debugging
  * Validation result: Not run
  */
 
@@ -23,21 +23,38 @@
 #ifndef SFTimeSignalDemo_COMMON_INCLUDES_
 #define SFTimeSignalDemo_COMMON_INCLUDES_
 #include "rtwtypes.h"
+#include "rtw_extmode.h"
+#include "sysran_types.h"
 #include "rtw_continuous.h"
 #include "rtw_solver.h"
 #include "rt_logging.h"
 #include "rt_nonfinite.h"
 #include "math.h"
+#include "dt_info.h"
+#include "ext_work.h"
 #endif                                 /* SFTimeSignalDemo_COMMON_INCLUDES_ */
 
 #include "SFTimeSignalDemo_types.h"
+#include "rtw_modelmap.h"
 #include <float.h>
 #include <string.h>
 #include <stddef.h>
 
 /* Macros for accessing real-time model data structure */
+#ifndef rtmGetDataMapInfo
+#define rtmGetDataMapInfo(rtm)         ((rtm)->DataMapInfo)
+#endif
+
+#ifndef rtmSetDataMapInfo
+#define rtmSetDataMapInfo(rtm, val)    ((rtm)->DataMapInfo = (val))
+#endif
+
 #ifndef rtmGetFinalTime
 #define rtmGetFinalTime(rtm)           ((rtm)->Timing.tFinal)
+#endif
+
+#ifndef rtmGetRTWExtModeInfo
+#define rtmGetRTWExtModeInfo(rtm)      ((rtm)->extModeInfo)
 #endif
 
 #ifndef rtmGetRTWLogInfo
@@ -78,31 +95,51 @@
 
 /* Block signals (default storage) */
 typedef struct {
-  real_T Clock;                        /* '<Root>/Clock' */
+  real_T Time;                         /* '<Root>/Clock' */
   real_T SineWave;                     /* '<Root>/Sine Wave' */
 } B_SFTimeSignalDemo_T;
 
-/* Parameters (default storage) */
-struct P_SFTimeSignalDemo_T_ {
-  real_T SineWave_Amp;                 /* Expression: 1
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-  real_T SineWave_Bias;                /* Expression: 0
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-  real_T SineWave_Freq;                /* Expression: 1
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-  real_T SineWave_Phase;               /* Expression: 0
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-};
+/* Block states (default storage) for system '<Root>' */
+typedef struct {
+  struct {
+    void *LoggedData[2];
+  } Scope_PWORK;                       /* '<Root>/Scope' */
+} DW_SFTimeSignalDemo_T;
 
 /* Real-time Model Data Structure */
 struct tag_RTM_SFTimeSignalDemo_T {
   const char_T *errorStatus;
   RTWLogInfo *rtwLogInfo;
+  RTWExtModeInfo *extModeInfo;
   RTWSolverInfo solverInfo;
+
+  /*
+   * DataMapInfo:
+   * The following substructure contains information regarding
+   * structures generated in the model's C API.
+   */
+  struct {
+    rtwCAPI_ModelMappingInfo mmi;
+  } DataMapInfo;
+
+  /*
+   * Sizes:
+   * The following substructure contains sizes information
+   * for many of the model attributes such as inputs, outputs,
+   * dwork, sample times, etc.
+   */
+  struct {
+    uint32_T checksums[4];
+  } Sizes;
+
+  /*
+   * SpecialInfo:
+   * The following substructure contains special information
+   * related to other components that are dependent on RTW.
+   */
+  struct {
+    const void *mappingInfo;
+  } SpecialInfo;
 
   /*
    * Timing:
@@ -123,19 +160,29 @@ struct tag_RTM_SFTimeSignalDemo_T {
   } Timing;
 };
 
-/* Block parameters (default storage) */
-extern P_SFTimeSignalDemo_T SFTimeSignalDemo_P;
-
 /* Block signals (default storage) */
 extern B_SFTimeSignalDemo_T SFTimeSignalDemo_B;
+
+/* Block states (default storage) */
+extern DW_SFTimeSignalDemo_T SFTimeSignalDemo_DW;
 
 /* Model entry point functions */
 extern void SFTimeSignalDemo_initialize(void);
 extern void SFTimeSignalDemo_step(void);
 extern void SFTimeSignalDemo_terminate(void);
 
+/* Function to get C API Model Mapping Static Info */
+extern const rtwCAPI_ModelMappingStaticInfo*
+  SFTimeSignalDemo_GetCAPIStaticMap(void);
+
 /* Real-time Model object */
 extern RT_MODEL_SFTimeSignalDemo_T *const SFTimeSignalDemo_M;
+
+/*-
+ * These blocks were eliminated from the model due to optimizations:
+ *
+ * Block '<Root>/Clock1' : Unused code path elimination
+ */
 
 /*-
  * The generated code includes comments that allow you to trace directly

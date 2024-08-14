@@ -1,40 +1,16 @@
-/sfRedis.c:150:43: error: unknown type name 'sfRedisBus' extern void sfRedis_Outputs_wrapper(const sfRedisBus *u0,
+In file included from /sfRedis_wrapper.c:13: /sfRedisBus.h:9:3: error: redefinition of 'sfRedisBus' as different kind of symbol } sfRedisBus;
 
-/sfRedis.c:151:3: error: unknown type name 'sfRedisBus' sfRedisBus *y0,
+/sfRedis_bus.h:19:3: note: previous definition is here } sfRedisBus;
 
-/sfRedis.c:161:42: error: unknown type name 'sfRedisBus' extern void sfRedis_Update_wrapper(const sfRedisBus *u0,
+/sfRedis_wrapper.c:119:10: error: use of undeclared identifier 'i' for (i=0; i < u_width; i++) {
 
-/sfRedis.c:162:3: error: unknown type name 'sfRedisBus' sfRedisBus *y0,
+/sfRedis_wrapper.c:119:15: error: use of undeclared identifier 'i' for (i=0; i < u_width; i++) {
 
-/sfRedis.c:171:47: error: unknown type name 'sfRedisBus' extern void sfRedis_Derivatives_wrapper(const sfRedisBus *u0,
+/sfRedis_wrapper.c:119:28: error: use of undeclared identifier 'i' for (i=0; i < u_width; i++) {
 
-/sfRedis.c:172:3: error: unknown type name 'sfRedisBus' sfRedisBus *y0,
+/sfRedis_wrapper.c:120:12: error: use of undeclared identifier 'i' y0[i] = u0[i];
 
-/sfRedis.c:740:3: error: use of undeclared identifier 'sfRedisBus'; did you mean 'sfRedisBusId'? sfRedisBus** _u0BUS = (sfRedisBus**)ssGetDWork(S,3); ^~~~~~~~~~ sfRedisBusId /sfRedis.c:713:11: note: 'sfRedisBusId' declared here DTypeId sfRedisBusId = ssGetDataTypeId(S,"sfRedisBus");
+/sfRedis_wrapper.c:120:20: error: use of undeclared identifier 'i' y0[i] = u0[i];
 
-/sfRedis.c:740:38: error: expected expression sfRedisBus** _u0BUS = (sfRedisBus**)ssGetDWork(S,3);
-
-/sfRedis.c:740:26: error: use of undeclared identifier 'sfRedisBus'; did you mean 'sfRedisBusId'? sfRedisBus** _u0BUS = (sfRedisBus**)ssGetDWork(S,3); ^~~~~~~~~~ sfRedisBusId /sfRedis.c:713:11: note: 'sfRedisBusId' declared here DTypeId sfRedisBusId = ssGetDataTypeId(S,"sfRedisBus");
-
-/sfRedis.c:740:16: error: use of undeclared identifier '_u0BUS' sfRedisBus** _u0BUS = (sfRedisBus**)ssGetDWork(S,3);
-
-/sfRedis.c:741:25: error: expected expression *_u0BUS = (sfRedisBus*)malloc(ssGetInputPortWidth(S, 0)*sizeof(sfRedisBus));
-
-/sfRedis.c:741:14: error: use of undeclared identifier 'sfRedisBus'; did you mean 'sfRedisBusId'? *_u0BUS = (sfRedisBus*)malloc(ssGetInputPortWidth(S, 0)*sizeof(sfRedisBus)); ^~~~~~~~~~ sfRedisBusId /sfRedis.c:713:11: note: 'sfRedisBusId' declared here DTypeId sfRedisBusId = ssGetDataTypeId(S,"sfRedisBus");
-
-/sfRedis.c:741:4: error: use of undeclared identifier '_u0BUS' *_u0BUS = (sfRedisBus*)malloc(ssGetInputPortWidth(S, 0)*sizeof(sfRedisBus));
-
-/sfRedis.c:742:3: error: use of undeclared identifier 'sfRedisBus'; did you mean 'sfRedisBusId'? sfRedisBus** _y0BUS = (sfRedisBus**)ssGetDWork(S,4); ^~~~~~~~~~ sfRedisBusId /sfRedis.c:713:11: note: 'sfRedisBusId' declared here DTypeId sfRedisBusId = ssGetDataTypeId(S,"sfRedisBus");
-
-/sfRedis.c:742:38: error: expected expression sfRedisBus** _y0BUS = (sfRedisBus**)ssGetDWork(S,4);
-
-/sfRedis.c:742:26: error: use of undeclared identifier 'sfRedisBus'; did you mean 'sfRedisBusId'? sfRedisBus** _y0BUS = (sfRedisBus**)ssGetDWork(S,4); ^~~~~~~~~~ sfRedisBusId /sfRedis.c:713:11: note: 'sfRedisBusId' declared here DTypeId sfRedisBusId = ssGetDataTypeId(S,"sfRedisBus");
-
-/sfRedis.c:742:16: error: use of undeclared identifier '_y0BUS' sfRedisBus** _y0BUS = (sfRedisBus**)ssGetDWork(S,4);
-
-/sfRedis.c:743:25: error: expected expression *_y0BUS = (sfRedisBus*)malloc(ssGetOutputPortWidth(S, 0)*sizeof(sfRedisBus));
-
-/sfRedis.c:743:14: error: use of undeclared identifier 'sfRedisBus'; did you mean 'sfRedisBusId'? *_y0BUS = (sfRedisBus*)malloc(ssGetOutputPortWidth(S, 0)*sizeof(sfRedisBus)); ^~~~~~~~~~ sfRedisBusId /sfRedis.c:713:11: note: 'sfRedisBusId' declared here DTypeId sfRedisBusId = ssGetDataTypeId(S,"sfRedisBus");
-
-fatal error: too many errors emitted, stopping now [-ferror-limit=] 20 errors generated.
+6 errors generated.
 

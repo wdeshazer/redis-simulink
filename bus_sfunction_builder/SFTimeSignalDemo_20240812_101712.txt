@@ -1,0 +1,530 @@
+=== Update Diagram (Elapsed: 2 sec) ===
+=== Simulation (Elapsed: 1 sec) ===
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.523 sec) ===
+=== Simulation (Elapsed: 0.721 sec) ===
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.301 sec) ===
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.299 sec) ===
+=== Update Diagram (Elapsed: 0.436 sec) ===
+=== S-function Builder (Elapsed: 0.310 sec) ===
+    Error:In file included from /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:13:
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:9:3: error: typedef redefinition with different types ('struct sfRedisBus' vs 'struct sfRedisBus')
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_bus.h:19:3: note: previous definition is here
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:10: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+             ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:15: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                  ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:28: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:12: error: use of undeclared identifier 'i'
+            y0[i] = u[i];
+               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:17: error: use of undeclared identifier 'u'
+            y0[i] = u[i];
+                    ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:19: error: use of undeclared identifier 'i'
+            y0[i] = u[i];
+                      ^
+    7 errors generated.
+=== S-function Builder (Elapsed: 0.306 sec) ===
+    Error:In file included from /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:13:
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:9:3: error: typedef redefinition with different types ('struct sfRedisBus' vs 'struct sfRedisBus')
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_bus.h:19:3: note: previous definition is here
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:10: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+             ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:15: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                  ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:28: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:12: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:20: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+                       ^
+    6 errors generated.
+=== S-function Builder (Elapsed: 0.305 sec) ===
+    Error:In file included from /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:13:
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:7:3: error: unknown type name 'Simulink'
+      Simulink.BusElement Time;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:7:11: error: expected member name or ';' after declaration specifiers
+      Simulink.BusElement Time;
+      ~~~~~~~~^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:7:11: error: expected ';' at end of declaration list
+      Simulink.BusElement Time;
+              ^
+              ;
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:8:3: error: unknown type name 'Simulink'
+      Simulink.BusElement SineWave;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:8:11: error: expected member name or ';' after declaration specifiers
+      Simulink.BusElement SineWave;
+      ~~~~~~~~^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:8:11: error: expected ';' at end of declaration list
+      Simulink.BusElement SineWave;
+              ^
+              ;
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:9:3: error: typedef redefinition with different types ('struct (unnamed struct at /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:6:9)' vs 'struct sfRedisBus')
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_bus.h:19:3: note: previous definition is here
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:10: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+             ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:15: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                  ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:28: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:12: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:20: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+                       ^
+    12 errors generated.
+=== S-function Builder (Elapsed: 0.303 sec) ===
+    Error:In file included from /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:13:
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedisBus.h:9:3: error: redefinition of 'sfRedisBus' as different kind of symbol
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_bus.h:19:3: note: previous definition is here
+    } sfRedisBus;
+      ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:10: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+             ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:15: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                  ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:28: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:12: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:120:20: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+                       ^
+    6 errors generated.
+=== S-function Builder (Elapsed: 0.303 sec) ===
+    Error:/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:118:10: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+             ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:118:15: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                  ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:118:28: error: use of undeclared identifier 'i'
+        for (i=0; i &lt; u_width; i++) {
+                               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:12: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+               ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:20: error: use of undeclared identifier 'i'
+            y0[i] = u0[i];
+                       ^
+    5 errors generated.
+=== S-function Builder (Elapsed: 0.303 sec) ===
+    Error:/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:121:15: error: assigning to 'real_T' (aka 'double') from incompatible type 'const sfRedisBus'
+            y0[i] = u0[i];
+                  ^ ~~~~~
+    1 error generated.
+=== S-function Builder (Elapsed: 0.304 sec) ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ### 'sfRedis.c' created successfully&lt;br&gt;### 'sfRedis_wrapper.c' created successfully&lt;br&gt;Verbose mode is on.
+    ... Looking for compiler 'Xcode with Clang' ...
+    ... Looking for environment variable 'DEVELOPER_DIR' ...No.
+    ... Executing command 'which xcrun' ...Yes ('/usr/bin/xcrun').
+    ... Looking for folder '/usr/bin' ...Yes.
+    ... Executing command 'xcode-select -print-path' ...Yes ('/Applications/Xcode.app/Contents/Developer').
+    ... Looking for folder '/Applications/Xcode.app/Contents/Developer' ...Yes.
+    ... Executing command 'defaults read com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...No.
+    ... Executing command 'defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...Yes ('15.0').
+    ... Executing command '
+    agreed=15.0 
+     if echo $agreed | grep -E '[\.\"]' >/dev/null; then 
+     lhs=`expr "$agreed" : '\([0-9]*\)[\.].*'` 
+      rhs=`expr "$agreed" : '[0-9]*[\.]\(.*\)$'` 
+     if echo $rhs | grep -E '[\."]' >/dev/null; then 
+     rhs=`expr "$rhs" : '\([0-9]*\)[\.].*'` 
+     fi 
+     if [ $lhs -gt 4 ] || ( [ $lhs -eq 4 ] && [ $rhs -ge 3 ] ); then 
+     echo $agreed 
+     else 
+     exit 1
+     fi 
+     fi' ...Yes ('15.0').
+    ... Executing command 'xcrun -sdk macosx --show-sdk-path' ...Yes ('/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk').
+    ... Executing command 'xcrun -sdk macosx --show-sdk-version | awk 'BEGIN {FS="."} ; {print $1"."$2}'' ...Yes ('14.5').
+    ... Executing command 'clang --version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]'|head -1' ...Yes ('15.0.0').
+    Found installed compiler 'Xcode with Clang'.
+    Options file details
+    -------------------------------------------------------------------
+    	Compiler location: /Applications/Xcode.app/Contents/Developer
+    	Options file: /Users/deshazere/Library/Application Support/MathWorks/MATLAB/R2024a/mex_C_maca64.xml
+    	CMDLINE200 : /usr/bin/xcrun -sdk macosx14.5 clang -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfRedis.o sfRedis_wrapper.o c_mexapi_version.o  -g -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"  sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -o sfRedis.mexmaca64
+    	CC : /usr/bin/xcrun -sdk macosx14.5 clang
+    	CXX : /usr/bin/xcrun -sdk macosx14.5 clang++
+    	DEFINES : -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE
+    	MATLABMEX : -DMATLAB_MEX_FILE
+    	MACOSX_DEPLOYMENT_TARGET : 11.0
+    	CFLAGS : -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off 
+    	INCLUDE : -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include"
+    	COPTIMFLAGS : -O2 -DNDEBUG
+    	CDEBUGFLAGS : -g
+    	LD : /usr/bin/xcrun -sdk macosx14.5 clang
+    	LDXX : /usr/bin/xcrun -sdk macosx14.5 clang++
+    	LDFLAGS : -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	LDBUNDLE : -bundle 
+    	FUNCTIONMAP : "/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	VERSIONMAP : "/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"
+    	LINKEXPORT : -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	LINKEXPORTVER : -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"
+    	LINKLIBS : sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++
+    	LDOPTIMFLAGS : -O
+    	LDDEBUGFLAGS : -g
+    	OBJEXT : .o
+    	LDEXT : .mexmaca64
+    	SETENV : CC="/usr/bin/xcrun -sdk macosx14.5 clang"
+                    CXX="/usr/bin/xcrun -sdk macosx14.5 clang++"
+                    CFLAGS="-fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE"
+                    CXXFLAGS="-fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE"
+                    COPTIMFLAGS="-O2 -DNDEBUG"
+                    CXXOPTIMFLAGS="-O2 -DNDEBUG"
+                    CDEBUGFLAGS="-g"
+                    CXXDEBUGFLAGS="-g"
+                    LD="/usr/bin/xcrun -sdk macosx14.5 clang"
+                    LDXX="/usr/bin/xcrun -sdk macosx14.5 clang++"
+                    LDFLAGS="-Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map""
+                    LDDEBUGFLAGS="-g"
+    	DEVELOPER_DIR_CHECK : 
+    	XCRUN_DIR : /usr/bin
+    	XCODE_DIR : /Applications/Xcode.app/Contents/Developer
+    	XCODE_AGREED_VERSION : 15.0
+    	ISYSROOT : /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
+    	SDKVER : 14.5
+    	CLANG_VERSION : 15.0.0
+    	MATLABROOT : /Applications/MATLAB_R2024a.app
+    	ARCH : maca64
+    	SRC : "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c";"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c";"/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c"
+    	OBJ : sfRedis.o;sfRedis_wrapper.o;c_mexapi_version.o
+    	OBJS : sfRedis.o sfRedis_wrapper.o c_mexapi_version.o 
+    	SRCROOT : /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis
+    	DEF : /var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_709109691919_32787/sfRedis.def
+    	EXP : "sfRedis.exp"
+    	LIB : "sfRedis.lib"
+    	EXE : sfRedis.mexmaca64
+    	ILK : "sfRedis.ilk"
+    	TEMPNAME : sfRedis
+    	EXEDIR : 
+    	EXENAME : sfRedis
+    	MANIFEST : "sfRedis.mexmaca64.manifest"
+    	OPTIM : -g
+    	LINKOPTIM : -g
+    	CMDLINE100_0 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c" -o sfRedis.o
+    	CMDLINE100_1 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c" -o sfRedis_wrapper.o
+    	CMDLINE100_2 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c" -o c_mexapi_version.o
+    -------------------------------------------------------------------
+    Building with 'Xcode with Clang'.
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c" -o sfRedis.o
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c" -o sfRedis_wrapper.o
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c" -o c_mexapi_version.o
+    { 
+      "bundle.symbolic_name" : "0a7e2a5e-c83e-44ce-a25a-4717467fce74", 
+      "mw" : 
+      { 
+          "mex" : 
+          {
+              "apiVersion" : 800,
+              "release" : "R2024a",
+              "threadpoolSafe" : 0
+          }
+      } 
+    }
+    
+    
+    /Applications/MATLAB_R2024a.app/bin/maca64/usResourceCompiler3 --manifest-add /private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_709109691919_32787//mw_mex_tempmex_manifest.json --bundle-name mexVersioning --out-file /private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_709109691919_32787//mw_mex_tempmex_bundle.zip
+    
+    /usr/bin/xcrun -sdk macosx14.5 clang -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfRedis.o sfRedis_wrapper.o c_mexapi_version.o  -g -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"  sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -o sfRedis.mexmaca64 -Wl,-sectcreate,__TEXT,us_resources,/private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_709109691919_32787//mw_mex_tempmex_bundle.zip 
+    MEX completed successfully.
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.305 sec) ===
+=== Update Diagram (Elapsed: 0.508 sec) ===
+=== Simulation (Elapsed: 0.802 sec) ===
+=== S-function Builder (Elapsed: 0.306 sec) ===
+    Error:/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:118:19: error: use of undeclared identifier 'u_width'; did you mean 'y_width'?
+        for (i=0; i &lt; u_width; i++) {
+                      ^~~~~~~
+                      y_width
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:111:16: note: 'y_width' declared here
+                            const int_T y_width,
+                                        ^
+    /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:119:17: error: use of undeclared identifier 'u0'
+            y0[i] = u0[i];
+                    ^
+    2 errors generated.
+=== S-function Builder (Elapsed: 0.306 sec) ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ### 'sfRedis.c' created successfully&lt;br&gt;### 'sfRedis_wrapper.c' created successfully&lt;br&gt;Verbose mode is on.
+    ... Looking for compiler 'Xcode with Clang' ...
+    ... Looking for environment variable 'DEVELOPER_DIR' ...No.
+    ... Executing command 'which xcrun' ...Yes ('/usr/bin/xcrun').
+    ... Looking for folder '/usr/bin' ...Yes.
+    ... Executing command 'xcode-select -print-path' ...Yes ('/Applications/Xcode.app/Contents/Developer').
+    ... Looking for folder '/Applications/Xcode.app/Contents/Developer' ...Yes.
+    ... Executing command 'defaults read com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...No.
+    ... Executing command 'defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...Yes ('15.0').
+    ... Executing command '
+    agreed=15.0 
+     if echo $agreed | grep -E '[\.\"]' >/dev/null; then 
+     lhs=`expr "$agreed" : '\([0-9]*\)[\.].*'` 
+      rhs=`expr "$agreed" : '[0-9]*[\.]\(.*\)$'` 
+     if echo $rhs | grep -E '[\."]' >/dev/null; then 
+     rhs=`expr "$rhs" : '\([0-9]*\)[\.].*'` 
+     fi 
+     if [ $lhs -gt 4 ] || ( [ $lhs -eq 4 ] && [ $rhs -ge 3 ] ); then 
+     echo $agreed 
+     else 
+     exit 1
+     fi 
+     fi' ...Yes ('15.0').
+    ... Executing command 'xcrun -sdk macosx --show-sdk-path' ...Yes ('/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk').
+    ... Executing command 'xcrun -sdk macosx --show-sdk-version | awk 'BEGIN {FS="."} ; {print $1"."$2}'' ...Yes ('14.5').
+    ... Executing command 'clang --version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]'|head -1' ...Yes ('15.0.0').
+    Found installed compiler 'Xcode with Clang'.
+    Options file details
+    -------------------------------------------------------------------
+    	Compiler location: /Applications/Xcode.app/Contents/Developer
+    	Options file: /Users/deshazere/Library/Application Support/MathWorks/MATLAB/R2024a/mex_C_maca64.xml
+    	CMDLINE200 : /usr/bin/xcrun -sdk macosx14.5 clang -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfRedis.o sfRedis_wrapper.o c_mexapi_version.o  -g -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"  sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -o sfRedis.mexmaca64
+    	CC : /usr/bin/xcrun -sdk macosx14.5 clang
+    	CXX : /usr/bin/xcrun -sdk macosx14.5 clang++
+    	DEFINES : -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE
+    	MATLABMEX : -DMATLAB_MEX_FILE
+    	MACOSX_DEPLOYMENT_TARGET : 11.0
+    	CFLAGS : -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off 
+    	INCLUDE : -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include"
+    	COPTIMFLAGS : -O2 -DNDEBUG
+    	CDEBUGFLAGS : -g
+    	LD : /usr/bin/xcrun -sdk macosx14.5 clang
+    	LDXX : /usr/bin/xcrun -sdk macosx14.5 clang++
+    	LDFLAGS : -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	LDBUNDLE : -bundle 
+    	FUNCTIONMAP : "/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	VERSIONMAP : "/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"
+    	LINKEXPORT : -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	LINKEXPORTVER : -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"
+    	LINKLIBS : sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++
+    	LDOPTIMFLAGS : -O
+    	LDDEBUGFLAGS : -g
+    	OBJEXT : .o
+    	LDEXT : .mexmaca64
+    	SETENV : CC="/usr/bin/xcrun -sdk macosx14.5 clang"
+                    CXX="/usr/bin/xcrun -sdk macosx14.5 clang++"
+                    CFLAGS="-fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE"
+                    CXXFLAGS="-fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE"
+                    COPTIMFLAGS="-O2 -DNDEBUG"
+                    CXXOPTIMFLAGS="-O2 -DNDEBUG"
+                    CDEBUGFLAGS="-g"
+                    CXXDEBUGFLAGS="-g"
+                    LD="/usr/bin/xcrun -sdk macosx14.5 clang"
+                    LDXX="/usr/bin/xcrun -sdk macosx14.5 clang++"
+                    LDFLAGS="-Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map""
+                    LDDEBUGFLAGS="-g"
+    	DEVELOPER_DIR_CHECK : 
+    	XCRUN_DIR : /usr/bin
+    	XCODE_DIR : /Applications/Xcode.app/Contents/Developer
+    	XCODE_AGREED_VERSION : 15.0
+    	ISYSROOT : /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
+    	SDKVER : 14.5
+    	CLANG_VERSION : 15.0.0
+    	MATLABROOT : /Applications/MATLAB_R2024a.app
+    	ARCH : maca64
+    	SRC : "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c";"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c";"/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c"
+    	OBJ : sfRedis.o;sfRedis_wrapper.o;c_mexapi_version.o
+    	OBJS : sfRedis.o sfRedis_wrapper.o c_mexapi_version.o 
+    	SRCROOT : /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis
+    	DEF : /var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_721564419289_32787/sfRedis.def
+    	EXP : "sfRedis.exp"
+    	LIB : "sfRedis.lib"
+    	EXE : sfRedis.mexmaca64
+    	ILK : "sfRedis.ilk"
+    	TEMPNAME : sfRedis
+    	EXEDIR : 
+    	EXENAME : sfRedis
+    	MANIFEST : "sfRedis.mexmaca64.manifest"
+    	OPTIM : -g
+    	LINKOPTIM : -g
+    	CMDLINE100_0 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c" -o sfRedis.o
+    	CMDLINE100_1 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c" -o sfRedis_wrapper.o
+    	CMDLINE100_2 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c" -o c_mexapi_version.o
+    -------------------------------------------------------------------
+    Building with 'Xcode with Clang'.
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c" -o sfRedis.o
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c" -o sfRedis_wrapper.o
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c" -o c_mexapi_version.o
+    { 
+      "bundle.symbolic_name" : "e6c5247f-aa28-49b1-9fbb-c6ba1648aa3b", 
+      "mw" : 
+      { 
+          "mex" : 
+          {
+              "apiVersion" : 800,
+              "release" : "R2024a",
+              "threadpoolSafe" : 0
+          }
+      } 
+    }
+    
+    
+    /Applications/MATLAB_R2024a.app/bin/maca64/usResourceCompiler3 --manifest-add /private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_721564419289_32787//mw_mex_tempmex_manifest.json --bundle-name mexVersioning --out-file /private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_721564419289_32787//mw_mex_tempmex_bundle.zip
+    
+    /usr/bin/xcrun -sdk macosx14.5 clang -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfRedis.o sfRedis_wrapper.o c_mexapi_version.o  -g -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"  sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -o sfRedis.mexmaca64 -Wl,-sectcreate,__TEXT,us_resources,/private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_721564419289_32787//mw_mex_tempmex_bundle.zip 
+    MEX completed successfully.
+=== S-function Builder (Elapsed: 0.302 sec) ===
+    Error:/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c:121:17: error: expected ';' after expression
+            ssPrintf
+                    ^
+                    ;
+    1 error generated.
+=== S-function Builder (Elapsed: 0.306 sec) ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ### 'sfRedis.c' created successfully&lt;br&gt;### 'sfRedis_wrapper.c' created successfully&lt;br&gt;Verbose mode is on.
+    ... Looking for compiler 'Xcode with Clang' ...
+    ... Looking for environment variable 'DEVELOPER_DIR' ...No.
+    ... Executing command 'which xcrun' ...Yes ('/usr/bin/xcrun').
+    ... Looking for folder '/usr/bin' ...Yes.
+    ... Executing command 'xcode-select -print-path' ...Yes ('/Applications/Xcode.app/Contents/Developer').
+    ... Looking for folder '/Applications/Xcode.app/Contents/Developer' ...Yes.
+    ... Executing command 'defaults read com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...No.
+    ... Executing command 'defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...Yes ('15.0').
+    ... Executing command '
+    agreed=15.0 
+     if echo $agreed | grep -E '[\.\"]' >/dev/null; then 
+     lhs=`expr "$agreed" : '\([0-9]*\)[\.].*'` 
+      rhs=`expr "$agreed" : '[0-9]*[\.]\(.*\)$'` 
+     if echo $rhs | grep -E '[\."]' >/dev/null; then 
+     rhs=`expr "$rhs" : '\([0-9]*\)[\.].*'` 
+     fi 
+     if [ $lhs -gt 4 ] || ( [ $lhs -eq 4 ] && [ $rhs -ge 3 ] ); then 
+     echo $agreed 
+     else 
+     exit 1
+     fi 
+     fi' ...Yes ('15.0').
+    ... Executing command 'xcrun -sdk macosx --show-sdk-path' ...Yes ('/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk').
+    ... Executing command 'xcrun -sdk macosx --show-sdk-version | awk 'BEGIN {FS="."} ; {print $1"."$2}'' ...Yes ('14.5').
+    ... Executing command 'clang --version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]'|head -1' ...Yes ('15.0.0').
+    Found installed compiler 'Xcode with Clang'.
+    Options file details
+    -------------------------------------------------------------------
+    	Compiler location: /Applications/Xcode.app/Contents/Developer
+    	Options file: /Users/deshazere/Library/Application Support/MathWorks/MATLAB/R2024a/mex_C_maca64.xml
+    	CMDLINE200 : /usr/bin/xcrun -sdk macosx14.5 clang -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfRedis.o sfRedis_wrapper.o c_mexapi_version.o  -g -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"  sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -o sfRedis.mexmaca64
+    	CC : /usr/bin/xcrun -sdk macosx14.5 clang
+    	CXX : /usr/bin/xcrun -sdk macosx14.5 clang++
+    	DEFINES : -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE
+    	MATLABMEX : -DMATLAB_MEX_FILE
+    	MACOSX_DEPLOYMENT_TARGET : 11.0
+    	CFLAGS : -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off 
+    	INCLUDE : -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include"
+    	COPTIMFLAGS : -O2 -DNDEBUG
+    	CDEBUGFLAGS : -g
+    	LD : /usr/bin/xcrun -sdk macosx14.5 clang
+    	LDXX : /usr/bin/xcrun -sdk macosx14.5 clang++
+    	LDFLAGS : -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	LDBUNDLE : -bundle 
+    	FUNCTIONMAP : "/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	VERSIONMAP : "/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"
+    	LINKEXPORT : -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map"
+    	LINKEXPORTVER : -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"
+    	LINKLIBS : sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++
+    	LDOPTIMFLAGS : -O
+    	LDDEBUGFLAGS : -g
+    	OBJEXT : .o
+    	LDEXT : .mexmaca64
+    	SETENV : CC="/usr/bin/xcrun -sdk macosx14.5 clang"
+                    CXX="/usr/bin/xcrun -sdk macosx14.5 clang++"
+                    CFLAGS="-fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE"
+                    CXXFLAGS="-fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE"
+                    COPTIMFLAGS="-O2 -DNDEBUG"
+                    CXXOPTIMFLAGS="-O2 -DNDEBUG"
+                    CDEBUGFLAGS="-g"
+                    CXXDEBUGFLAGS="-g"
+                    LD="/usr/bin/xcrun -sdk macosx14.5 clang"
+                    LDXX="/usr/bin/xcrun -sdk macosx14.5 clang++"
+                    LDFLAGS="-Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map""
+                    LDDEBUGFLAGS="-g"
+    	DEVELOPER_DIR_CHECK : 
+    	XCRUN_DIR : /usr/bin
+    	XCODE_DIR : /Applications/Xcode.app/Contents/Developer
+    	XCODE_AGREED_VERSION : 15.0
+    	ISYSROOT : /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
+    	SDKVER : 14.5
+    	CLANG_VERSION : 15.0.0
+    	MATLABROOT : /Applications/MATLAB_R2024a.app
+    	ARCH : maca64
+    	SRC : "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c";"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c";"/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c"
+    	OBJ : sfRedis.o;sfRedis_wrapper.o;c_mexapi_version.o
+    	OBJS : sfRedis.o sfRedis_wrapper.o c_mexapi_version.o 
+    	SRCROOT : /Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis
+    	DEF : /var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_746286188633_32787/sfRedis.def
+    	EXP : "sfRedis.exp"
+    	LIB : "sfRedis.lib"
+    	EXE : sfRedis.mexmaca64
+    	ILK : "sfRedis.ilk"
+    	TEMPNAME : sfRedis
+    	EXEDIR : 
+    	EXENAME : sfRedis
+    	MANIFEST : "sfRedis.mexmaca64.manifest"
+    	OPTIM : -g
+    	LINKOPTIM : -g
+    	CMDLINE100_0 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c" -o sfRedis.o
+    	CMDLINE100_1 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c" -o sfRedis_wrapper.o
+    	CMDLINE100_2 : /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c" -o c_mexapi_version.o
+    -------------------------------------------------------------------
+    Building with 'Xcode with Clang'.
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis.c" -o sfRedis.o
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder/sfRedis_wrapper.c" -o sfRedis_wrapper.o
+    /usr/bin/xcrun -sdk macosx14.5 clang -c -DUSE_PUBLISHED_ONLY  -DMX_COMPAT_64  -DMATLAB_MEXCMD_RELEASE=R2018a  -DUSE_MEX_CMD   -DMATLAB_MEX_FILE -I"/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/bus_sfunction_builder"  -I"/Applications/MATLAB_R2024a.app/extern/include" -I"/Applications/MATLAB_R2024a.app/simulink/include" -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fwrapv -ffp-contract=off  -g "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c" -o c_mexapi_version.o
+    { 
+      "bundle.symbolic_name" : "25c4126c-751a-49ae-a900-196831f20ada", 
+      "mw" : 
+      { 
+          "mex" : 
+          {
+              "apiVersion" : 800,
+              "release" : "R2024a",
+              "threadpoolSafe" : 0
+          }
+      } 
+    }
+    
+    
+    /Applications/MATLAB_R2024a.app/bin/maca64/usResourceCompiler3 --manifest-add /private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_746286188633_32787//mw_mex_tempmex_manifest.json --bundle-name mexVersioning --out-file /private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_746286188633_32787//mw_mex_tempmex_bundle.zip
+    
+    /usr/bin/xcrun -sdk macosx14.5 clang -Wl,-twolevel_namespace  -arch arm64 -mmacosx-version-min=11.0 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -bundle  -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/mexFunction.map" sfRedis.o sfRedis_wrapper.o c_mexapi_version.o  -g -Wl,-exported_symbols_list,"/Applications/MATLAB_R2024a.app/extern/lib/maca64/c_exportsmexfileversion.map"  sfHiredis/hiredis_mex//libhiredis.dylib  -L"/Applications/MATLAB_R2024a.app/bin/maca64" -lmx -lmex -lmat -lc++ -o sfRedis.mexmaca64 -Wl,-sectcreate,__TEXT,us_resources,/private/var/folders/1t/ccf_7dn14tj8d5bnmkt9bm7m0000gq/T/mex_746286188633_32787//mw_mex_tempmex_bundle.zip 
+    MEX completed successfully.
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.306 sec) ===
+=== Update Diagram (Elapsed: 0.447 sec) ===
+=== Simulation (Elapsed: 0.850 sec) ===
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.308 sec) ===
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.304 sec) ===
+=== Update Diagram (Elapsed: 0.609 sec) ===
+    Warning:When the Configuration Parameters->Diagnostics->Connectivity->"Bus signal treated as vector" diagnostic is set to "Error", the 'Scope' block cannot accept a virtual bus signal. A virtual bus is connected to 'Input Port 1' of block 'SFTimeSignalDemo/Scope'. Consider converting the virtual bus into a vector using a Bus to Vector block at the input, or converting the virtual bus to a nonvirtual bus by inserting a Signal Conversion block at the input, with its "Output" option set to "Nonvirtual bus".
+=== Model Save (SFTimeSignalDemo) (Elapsed: 0.305 sec) ===
+=== Update Diagram (Elapsed: 0.448 sec) ===
+=== Simulation (Elapsed: 0.804 sec) ===

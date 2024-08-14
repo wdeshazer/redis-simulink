@@ -2,7 +2,7 @@
 ## Makefile generated for component 'SFTimeSignalDemo'. 
 ## 
 ## Makefile     : SFTimeSignalDemo.mk
-## Generated on : Fri Aug 09 05:00:53 2024
+## Generated on : Mon Aug 12 04:47:11 2024
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/SFTimeSignalDemo
 ## Product type : executable
 ## 
@@ -119,23 +119,29 @@ ECHO                = @echo
 MV                  = @mv
 RUN                 =
 
-#----------------------------------------
-# "Faster Builds" Build Configuration
-#----------------------------------------
+#--------------------------------
+# "Debug" Build Configuration
+#--------------------------------
 
-ARFLAGS              = ruvs
+ARFLAGS              = ruvs \
+                       $(ARDEBUG)
 CFLAGS               = -c -isysroot $(XCODE_SDK_ROOT) -arch $(ARCHS) $(C_STANDARD_OPTS) -mmacosx-version-min=11.0 \
-                       -O0 -ffp-contract=off
+                       -O0 -ffp-contract=off \
+                       $(CDEBUG)
 CPPFLAGS             = -c -isysroot $(XCODE_SDK_ROOT) -arch $(ARCHS) $(CPP_STANDARD_OPTS) -mmacosx-version-min=11.0 \
-                       -O0 -ffp-contract=off
-CPP_LDFLAGS          = -arch $(ARCHS) -isysroot $(XCODE_SDK_ROOT) -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/$(RELATIVE_PATH_TO_ANCHOR) $(NO_WARN_DUPLICATE_LIBRARIES)
+                       -O0 -ffp-contract=off \
+                       $(CPPDEBUG)
+CPP_LDFLAGS          = -arch $(ARCHS) -isysroot $(XCODE_SDK_ROOT) -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/$(RELATIVE_PATH_TO_ANCHOR) $(NO_WARN_DUPLICATE_LIBRARIES) \
+                       $(CPPLDDEBUG)
 CPP_SHAREDLIB_LDFLAGS  = -arch $(ARCHS)  \
                          -dynamiclib -install_name @rpath/$(notdir $(PRODUCT)) -isysroot $(XCODE_SDK_ROOT) \
                          -Wl,$(LD_NAMESPACE) $(LD_UNDEFS) \
-                         $(NO_WARN_DUPLICATE_LIBRARIES)
+                         $(NO_WARN_DUPLICATE_LIBRARIES) \
+                         $(CPPLDDEBUG)
 DOWNLOAD_FLAGS       =
 EXECUTE_FLAGS        =
-LDFLAGS              = -arch $(ARCHS) -isysroot $(XCODE_SDK_ROOT) -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/$(RELATIVE_PATH_TO_ANCHOR) $(NO_WARN_DUPLICATE_LIBRARIES)
+LDFLAGS              = -arch $(ARCHS) -isysroot $(XCODE_SDK_ROOT) -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/$(RELATIVE_PATH_TO_ANCHOR) $(NO_WARN_DUPLICATE_LIBRARIES) \
+                       $(LDDEBUG)
 MEX_CPPFLAGS         =
 MEX_CPPLDFLAGS       =
 MEX_CFLAGS           =
@@ -144,7 +150,8 @@ MAKE_FLAGS           = -f $(MAKEFILE)
 SHAREDLIB_LDFLAGS    = -arch $(ARCHS)  \
                        -dynamiclib -install_name @rpath/$(notdir $(PRODUCT)) -isysroot $(XCODE_SDK_ROOT) \
                        -Wl,$(LD_NAMESPACE) $(LD_UNDEFS) \
-                       $(NO_WARN_DUPLICATE_LIBRARIES)
+                       $(NO_WARN_DUPLICATE_LIBRARIES) \
+                       $(LDDEBUG)
 
 
 
@@ -160,7 +167,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/SFTimeSignalDemo_grt_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/SFTimeSignalDemo_grt_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -168,9 +175,9 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DMAT_FILE=1 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
+DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DEXT_MODE=1 -DMAT_FILE=1 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
-DEFINES_OPTS = -DTID01EQ=1
+DEFINES_OPTS = -DEXTMODE_STATIC -DEXTMODE_STATIC_SIZE=1000000 -DON_TARGET_WAIT_FOR_START=1 -DTID01EQ=1
 DEFINES_STANDARD = -DMODEL=SFTimeSignalDemo -DNUMST=2 -DNCSTATES=0 -DHAVESTDIO -DRT -DUSE_RTMODEL
 
 DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STANDARD)
@@ -179,7 +186,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STAN
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(MATLAB_ROOT)/rtw/c/src/rt_logging.c $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo.c $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo_data.c $(START_DIR)/SFTimeSignalDemo_grt_rtw/rt_nonfinite.c
+SRCS = $(MATLAB_ROOT)/rtw/c/src/rt_logging.c $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo.c $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo_capi.c $(START_DIR)/SFTimeSignalDemo_grt_rtw/rt_nonfinite.c $(MATLAB_ROOT)/rtw/c/src/rt_logging_mmi.c $(MATLAB_ROOT)/rtw/c/src/rtw_modelmap_utils.c $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/ext_svr.c $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/updown.c $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/ext_work.c $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/rtiostream_interface.c $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/rtiostream_tcpip.c $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/mem_mgr.c $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/rtiostream_utils.c
 
 MAIN_SRC = $(MATLAB_ROOT)/rtw/c/src/common/rt_main.c
 
@@ -189,7 +196,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = rt_logging.o SFTimeSignalDemo.o SFTimeSignalDemo_data.o rt_nonfinite.o
+OBJS = rt_logging.o SFTimeSignalDemo.o SFTimeSignalDemo_capi.o rt_nonfinite.o rt_logging_mmi.o rtw_modelmap_utils.o ext_svr.o updown.o ext_work.o rtiostream_interface.o rtiostream_tcpip.o mem_mgr.o rtiostream_utils.o
 
 MAIN_OBJ = rt_main.o
 
@@ -569,6 +576,126 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.cc
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.CC
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.cp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.CPP
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.c++
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.C++
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.cxx
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/%.CXX
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.cc
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.CC
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.cp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.CPP
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.c++
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.C++
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.cxx
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/%.CXX
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.cc
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.CC
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.cp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.CPP
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.c++
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.C++
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.cxx
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/%.CXX
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
 rt_logging.o : $(MATLAB_ROOT)/rtw/c/src/rt_logging.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
@@ -577,7 +704,7 @@ SFTimeSignalDemo.o : $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-SFTimeSignalDemo_data.o : $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo_data.c
+SFTimeSignalDemo_capi.o : $(START_DIR)/SFTimeSignalDemo_grt_rtw/SFTimeSignalDemo_capi.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
@@ -585,7 +712,43 @@ rt_nonfinite.o : $(START_DIR)/SFTimeSignalDemo_grt_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
+rt_logging_mmi.o : $(MATLAB_ROOT)/rtw/c/src/rt_logging_mmi.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtw_modelmap_utils.o : $(MATLAB_ROOT)/rtw/c/src/rtw_modelmap_utils.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
 rt_main.o : $(MATLAB_ROOT)/rtw/c/src/common/rt_main.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+ext_svr.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/ext_svr.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+updown.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/updown.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+ext_work.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/ext_work.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtiostream_interface.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/rtiostream_interface.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtiostream_tcpip.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/rtiostreamtcpip/rtiostream_tcpip.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+mem_mgr.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/mem_mgr.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtiostream_utils.o : $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/rtiostream_utils.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

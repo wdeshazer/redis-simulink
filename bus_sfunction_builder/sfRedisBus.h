@@ -1,6 +1,11 @@
 #ifndef _SFREDISBUS_H_
 #define _SFREDISBUS_H_
 
-#include "tmwtypes.h"
+#include "simstruc.h"
+
+struct {
+  double Time;
+  double SineWave;
+} sfRedisBus;
 
 #endif

@@ -1,5 +1,5 @@
 % function [redisCreds, rcStruct] = redisCredentials(values)
-  values = char_lines; 
+  values = redisCredentials;
   [redisHostname, redisPort, redisPasswd] = values{:};
 
   fields = {'hostname', 'ip', 'port', 'passwd', 'timestamp'};
@@ -10,7 +10,7 @@
     redisPasswd, ...
     datetime, ...
     };
-  
+
   cf = size(fields, 2); cv = size(vals, 2);
 
   if cf ~= cv
@@ -18,17 +18,18 @@
   else
     r1 = colon(1, cf);
     r2 = r1*2;
-    
+
     % The arguments to struct need to be field value.
     alt = cell(1, cf+cv);
     alt(r2) = values;
     alt(r2-1) = fields;
 
     redisCred = struct(alt{:});
-    
+
   end
-  
+
   rcStruct = libstruct('c_struct', redisCreds);
+  assignin('base', "rcStruct", rcStruct);
 
   % wsp = {'base', 'caller'};
   % for i=1:2

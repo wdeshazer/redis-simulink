@@ -7,14 +7,14 @@
  *
  * Code generation for model "SFTimeSignalDemo".
  *
- * Model version              : 1.16
+ * Model version              : 1.47
  * Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
- * C source code generated on : Fri Aug  9 05:00:50 2024
+ * C source code generated on : Mon Aug 12 04:40:31 2024
  *
  * Target selection: grt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
  * Embedded hardware selection: Intel->x86-64 (Windows64)
- * Code generation objectives: Unspecified
+ * Code generation objective: Debugging
  * Validation result: Not run
  */
 

@@ -1,6 +1,6 @@
 function sfRedis_Bus()
   % SFREDIS_BUS initializes a set of bus objects in the MATLAB base workspace
-  
+
   sfRedisBus = Simulink.Bus;
   sfRedisBus.HeaderFile = 'sfRedisBus.h';
   sfRedisBus.Description = sprintf('sfRedisBus');
@@ -8,11 +8,12 @@ function sfRedis_Bus()
   sfRedisBus.Alignment = -1;
   sfRedisBus.PreserveElementDimensions = 1;
 
-   
+
   % Bus object: sfRedisBus
   clear elems;
   elems = sfRedisBus.elems;
   elems(1) = Simulink.BusElement;
+
   elems(1).Name = 'Time';
   elems(1).Dimensions = 1;
   elems(1).DimensionsMode = 'Fixed';
@@ -33,7 +34,7 @@ function sfRedis_Bus()
   elems(2).Max = [];
   elems(2).DocUnits = '';
   elems(2).Description = sprintf('A signal');
-  
+
   sfRedisBus.Elements = elems;
   clear elems;
   assignin('base','sfRedisBus', sfRedisBus);

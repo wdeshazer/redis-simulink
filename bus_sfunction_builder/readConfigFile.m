@@ -35,7 +35,7 @@ vals = {
   resolvehost(redisHostname, 'address'), ...
   redisPort, ...
   redisPasswd, ...
-  datetime, ...
+  string(datetime), ...
   };
 
 cf = size(keys, 2); cv = size(vals, 2);
@@ -52,5 +52,12 @@ else
   alt(r2-1) = keys;
 
   redisCreds = struct(alt{:});
+
+  assignin("base", "redisCredentials", redisCreds);
+
+  for i = 1: length(keys)
+    assignin("base", keys{i}, vals{i})
+  end
+
 end
 end
