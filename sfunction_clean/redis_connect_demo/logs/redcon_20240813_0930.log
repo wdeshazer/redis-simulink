@@ -1,0 +1,1135 @@
+session_log='sfunction_setup.log'
+
+session_log =
+
+    'sfunction_setup.log'
+
+redisSfunction_makecfg='redisSfunction_makecfg.m'
+
+redisSfunction_makecfg =
+
+    'redisSfunction_makecfg.m'
+
+system(['touch ' redisSfunction_makecfg])
+
+ans =
+
+     0
+
+ls
+docs				redisSfunction.c
+redisConnect.c			redisSfunction_makecfg.m
+redisConnect.h			sfunction_setup.log
+
+help RTW.BuildInfo
+ <strong>RTW.BuildInfo</strong> class
+    <strong>RTW.BuildInfo</strong> extends RTW.BuildInfoBuildObj.
+
+    <a href="matlab:doc RTW.BuildInfo">Documentation for RTW.BuildInfo</a>
+
+doc RTW.BuildInfo
+buildinfo = RTW.BuildInfo
+
+buildinfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'untitled'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: []
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+buildInfo.ComponentName = 'redisSfunction'
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> with fields:
+
+    ComponentName: 'redisSfunction'
+
+addSourceFiles(buildInfo, 'redisSfunction.c')
+{Incorrect number or types of inputs or outputs for function addSourceFiles.
+} 
+ls
+docs				redisSfunction.c
+redisConnect.c			redisSfunction_makecfg.m
+redisConnect.h			sfunction_setup.log
+
+buildInfo
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> with fields:
+
+    ComponentName: 'redisSfunction'
+
+buildinfo
+
+buildinfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'untitled'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: []
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+clear buildinfo
+clear buildInfo
+buildInfo = RTW.BuildInfo
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'untitled'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: []
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+buildInfo.ComponentName = 'redisSfunction'
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'redisSfunction'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: []
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+addSourceFiles(buildInfo, 'redisSfunction.c')
+
+ans = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfoFile')" style="font-weight:bold">BuildInfoFile</a> with properties:
+
+        FileName: 'redisSfunction.c'
+            Path: ''
+    DisplayLabel: 'redisSfunction.c'
+           Group: ''
+
+movefile redisSfunction_makecfg.m ../build_tools/
+movefile sfunction_setup.log ../build_tools/
+cd ../build_tools/
+ls
+redisSfunction_makecfg.m	sfunction_setup.log
+
+diary
+buildinfo
+{Unrecognized function or variable 'buildinfo'.
+} 
+buildInfo
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'redisSfunction'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: []
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+buildInfo.Path = '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/'
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'redisSfunction'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/'
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+ls ..
+build_tools		hiredis
+golden_files		mex_Wrapper_Functions
+
+addSourcePaths(buildInfo, 'mex_Wrapper_Functions')
+addSourcePaths(buildInfo, 'mex_Wrapper_Functions', 'sfunction')
+buildInfo
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'redisSfunction'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/'
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+buildInfo.Src
+
+ans = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfoModules')" style="font-weight:bold">BuildInfoModules</a> with properties:
+
+           Paths: [1×1 RTW.BuildInfoString]
+           Files: [1×1 RTW.BuildInfoFile]
+    DisplayLabel: 'Sources'
+           Group: ''
+
+buildInfo.Src.Paths
+
+ans = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfoString')" style="font-weight:bold">BuildInfoString</a> with properties:
+
+                 Value: 'mex_Wrapper_Functions'
+    SharedLibraryMerge: 1
+      SourceFileHandle: [1×0 RTW.BuildInfoFile]
+          DisplayLabel: 'source path'
+                 Group: ''
+
+buildInfo.Src.Paths.Group = 'sfunction'
+
+buildInfo = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfo')" style="font-weight:bold">BuildInfo</a> with properties:
+
+    ComponentName: 'redisSfunction'
+           Tokens: [0×0 RTW.BuildInfoKeyValuePair]
+        BuildArgs: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeVars: [0×0 RTW.BuildInfoKeyValuePair]
+         MakeArgs: ''
+           SysLib: [1×1 RTW.BuildInfoModules]
+          LinkObj: [0×0 RTW.BuildInfoLinkObj]
+        ModelRefs: [0×0 RTW.BuildInfoLinkObj]
+         Settings: [1×1 RTW.BuildInfoSettings]
+          Options: [1×1 RTW.BuildInfoOptions]
+              Inc: [1×1 RTW.BuildInfoModules]
+              Src: [1×1 RTW.BuildInfoModules]
+            Other: [1×1 RTW.BuildInfoModules]
+             Path: '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/'
+     DisplayLabel: 'Build Info'
+            Group: ''
+
+buildInfo.Src.Paths
+
+ans = 
+
+  <a href="matlab:helpPopup('RTW.BuildInfoString')" style="font-weight:bold">BuildInfoString</a> with properties:
+
+                 Value: 'mex_Wrapper_Functions'
+    SharedLibraryMerge: 1
+      SourceFileHandle: [1×0 RTW.BuildInfoFile]
+          DisplayLabel: 'source path'
+                 Group: 'sfunction'
+
+addSourcePaths(buildInfo, 'hiredis', 'hiredis')
+buildInfo.Src.Paths
+
+ans = 
+
+  2×1 <a href="matlab:helpPopup('RTW.BuildInfoString')" style="font-weight:bold">BuildInfoString</a> array with properties:
+
+    Value
+    SharedLibraryMerge
+    SourceFileHandle
+    DisplayLabel
+    Group
+
+buildInfo.Src.Paths{:}
+{Brace indexing is not supported for variables of this type.
+} 
+buildInfo.Src.Paths.{:}
+ buildInfo.Src.Paths.{:}
+                     ↑
+{Invalid expression. When calling a function or indexing a variable, use
+parentheses. Otherwise, check for mismatched delimiters.
+} 
+buildInfo.Src.Paths.DisplayLabel
+
+ans =
+
+    'source path'
+
+
+ans =
+
+    'source path'
+
+buildInfo.Src.Paths.getPreferredProperties
+
+ans =
+
+  1×2 <a href="matlab:helpPopup('cell')" style="font-weight:bold">cell</a> array
+
+    {'Group'}    {'Value'}
+
+buildInfo.Src.Paths.isHierarchical
+
+ans =
+
+  <a href="matlab:helpPopup('logical')" style="font-weight:bold">logical</a>
+
+   0
+
+buildInfo.Src.Paths.getPreferredProperties
+
+ans =
+
+  1×2 <a href="matlab:helpPopup('cell')" style="font-weight:bold">cell</a> array
+
+    {'Group'}    {'Value'}
+
+buildInfo.Src.Paths.isHierarchical
+
+ans =
+
+  <a href="matlab:helpPopup('logical')" style="font-weight:bold">logical</a>
+
+   0
+
+buildInfo.Src.Paths(:)
+
+ans = 
+
+  2×1 <a href="matlab:helpPopup('RTW.BuildInfoString')" style="font-weight:bold">BuildInfoString</a> array with properties:
+
+    Value
+    SharedLibraryMerge
+    SourceFileHandle
+    DisplayLabel
+    Group
+
+buildInfo.Src.Paths.Value
+
+ans =
+
+    'mex_Wrapper_Functions'
+
+
+ans =
+
+    'hiredis'
+
+help BuildInfoString
+BuildInfoString not found.
+
+    <a href="matlab:docsearch BuildInfoString">Search the documentation for BuildInfoString</a>
+
+buildInfo.Src.Paths(1).Value
+
+ans =
+
+    'mex_Wrapper_Functions'
+
+buildInfo.Src.Paths(:).Value
+
+ans =
+
+    'mex_Wrapper_Functions'
+
+
+ans =
+
+    'hiredis'
+
+buildInfo.Src.Paths(:)
+
+ans = 
+
+  2×1 <a href="matlab:helpPopup('RTW.BuildInfoString')" style="font-weight:bold">BuildInfoString</a> array with properties:
+
+    Value
+    SharedLibraryMerge
+    SourceFileHandle
+    DisplayLabel
+    Group
+
+buildInfo.Src.Paths{:}
+{Brace indexing is not supported for variables of this type.
+} 
+buildInfo.Src.Paths.getBaseBuildInfoClassProperties
+
+ans =
+
+  1×1 <a href="matlab:helpPopup('cell')" style="font-weight:bold">cell</a> array
+
+    {'Group'}
+
+buildInfo.Src.Paths.SharedLibraryMerge
+
+ans =
+
+  <a href="matlab:helpPopup('logical')" style="font-weight:bold">logical</a>
+
+   1
+
+
+ans =
+
+  <a href="matlab:helpPopup('logical')" style="font-weight:bold">logical</a>
+
+   1
+
+cd ..
+movefile mex_Wrapper_Functions/docs/ .
+ls
+build_tools		golden_files		mex_Wrapper_Functions
+docs			hiredis
+
+ls
+build_tools		golden_files		mex_Wrapper_Functions
+docs			hiredis
+
+getSourceFiles(buildInfo, true, true)
+
+ans =
+
+  1×1 <a href="matlab:helpPopup('cell')" style="font-weight:bold">cell</a> array
+
+    {'redisSfunction.c'}
+
+getSourceFiles(buildInfo, true)
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('RTW.BuildInfoBuildObj/getSourceFiles', '/Applications/MATLAB_R2024a.app/toolbox/coder/compile/+RTW/@BuildInfoBuildObj/getSourceFiles.m', 45)" style="font-weight:bold">RTW.BuildInfoBuildObj/getSourceFiles</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/coder/compile/+RTW/@BuildInfoBuildObj/getSourceFiles.m',45,0)">line 45</a>)
+[varargout{1:nargout}] = h.getFiles('source', concatenatePaths, replaceMatlabroot, varargin{:});
+} 
+getSourcePaths(buildInfo, true)
+
+ans =
+
+  1×2 <a href="matlab:helpPopup('cell')" style="font-weight:bold">cell</a> array
+
+    {'mex_Wrapper_Functions'}    {'hiredis'}
+
+paths = getSourcePaths(buildInfo, true)
+
+paths =
+
+  1×2 <a href="matlab:helpPopup('cell')" style="font-weight:bold">cell</a> array
+
+    {'mex_Wrapper_Functions'}    {'hiredis'}
+
+paths{1}
+
+ans =
+
+    'mex_Wrapper_Functions'
+
+help target
+--- help for MATLAB namespace <strong>target</strong> ---
+
+ <strong>target</strong> - Manage target hardware and build tool information
+
+    Introduced in MATLAB Coder in R2019a
+    <a href="matlab:doc target">Documentation for target</a>
+
+apiImp = target.create('APIImplementation', 'Name', ...
+                       'x86 rtiostream Implementation');
+apiImp.API = target.create('API', 'Name', 'rtiostream');
+apiImp.BuildDependencies = target.create('BuildDependencies');
+apiImp.BuildDependencies.SourceFiles = ...
+      {fullfile('$(MATLAB_ROOT)', 'toolbox', ...
+                'coder', 'rtiostream','src', ...
+                'rtiostreamtcpip', 'rtiostream_tcpip.c')};
+apiImp.MainFunction = target.create('MainFunction', ...
+                      'Name', 'TCP RtIOStream Main');
+apiImp.MainFunction.Arguments = {'-blocking', '1', '-port', '0'};
+help find_system
+ <strong>find_system</strong> Find items within Simulink systems
+    OBJECTS=<strong>find_system</strong> searches loaded block diagram systems and returns a cell array containing
+    block diagrams and blocks in hierarchical order.
+ 
+    OBJECTS=<strong>find_system</strong>(SYSTEM) returns SYSTEM and its blocks in hierarchical order.
+ 
+    OBJECTS=<strong>find_system</strong>(CONSTRAINT1,VALUE1,CONSTRAINT2,VALUE2,...) searches all loaded block
+    diagrams and returns a cell array containing block diagrams and blocks in hierarchical order
+    that meet the criterion specified by one or more CONSTRAINT, VALUE pairs.
+ 
+    OBJECTS=<strong>find_system</strong>(SYSTEM,CONSTRAINT1,VALUE1,CONSTRAINT2,VALUE2,...) searches SYSTEM and
+    returns a cell array containing block diagrams and blocks in hierarchical order that meet the
+    criterion specified by one or more CONSTRAINT, VALUE pairs.
+ 
+    SYSTEM is either a scalar or cell array of block diagram system elements. Each element can be a
+    path name or handle. You obtain the handle for a system using get_param(SYSTEM,'handle'). An
+    element can be a block diagram or the path to an element within a block diagram, e.g. a system
+    can be a block diagram, block, etc. There are three types of block diagram systems, 'model',
+    'subsystem', and 'library'.
+ 
+    OBJECTS is a cell array of path names or handles to block diagram system elements. Path names
+    are returned when you specify SYSTEM as a path name or a cell array of path names and are not
+    using the 'FindAll', 'on' constraint; otherwise handles are returned.
+ 
+    There are two types of constraints, general constraints and object parameter constraints. The
+    general constraints must come *before* the object parameter constraints.
+ 
+    General CONSTRAINT, VALUE pairs:
+    -------------------------------
+    Case is ignored for CONSTRAINTS, e.g. 'SearchDepth' and 'searchDepth' are equivalent.
+ 
+    'SearchDepth', INTEGER
+         Limit search to a specific depth in the block diagram hierarchy. A value of 0 searches only
+         the top-level of the specified systems. A value of 1, searches the top-level of all systems
+         and the blocks in the top-level of each system.
+         Example: to find all open block diagrams, use
+            >> <strong>find_system</strong>('SearchDepth',0)
+         Example: to find all blocks at in the top layer of SYSTEM, use
+            >> <strong>find_system</strong>(SYSTEM,'SearchDepth',1,'Type','Block')
+            where SYSTEM could be a block diagram, e.g. 'myModel' or it could be a layer within a
+            block diagram, e.g. 'myModel/SubsystemName'.
+         Example: to find all Goto blocks in top-level layer of SYSTEM, use
+            >> <strong>find_system</strong>(SYSTEM,'SearchDepth',1,'BlockType','Goto')
+ 
+    'FindAll', 'off' (default) | 'on'
+         If 'on', search block diagrams, blocks, annotations, lines, and ports.
+         When 'on', the result from <strong>find_system</strong> is always a vector of handles.
+         If 'off', search only block diagrams and blocks.
+         Example: to find all blocks starting with 'a' with result as a vector of handles, use:
+           >> <strong>find_system</strong>(bdroot,'FindAll','on','Regexp','on','Type','block','Name','^a')
+ 
+    'FirstResultOnly', 'off' (default) | 'on'
+         If 'on' return only the first result and then stop the search.
+ 
+    'Type', 'block_diagram' | 'block' | 'line' | 'port' | 'annotation'
+         Default is to return 'block_diagram' and 'block' objects.
+         'block_diagram' includes any type of block diagram: 'model', 'subsystem', or 'library'.
+         Example: to find all open block diagram systems, use
+           >> systems = <strong>find_system</strong>('Type','block_diagram')
+           and for a given block diagram system,
+           >> get_param(system{idx},'BlockDiagramType')
+           will return the block diagram system type, 'model', 'subsystem', or 'library'.
+         Example: find all block diagram systems and separate them into their types:
+           names:      All loaded block diagram systems
+           models:     All block diagrams of type 'model'
+           subsystems: All block diagrams of type 'subsystem'
+           libraries:  All block diagrams of type 'library'
+           >> names      = <strong>find_system</strong>('Type','block_diagram')
+           >> selectFcn  = @(name,type)isequal(type,get_param(name,'BlockDiagramType'));
+           >> models     = names(cellfun(@(name)selectFcn(name,'model'),names))
+           >> subsystems = names(cellfun(@(name)selectFcn(name,'subsystem'),names))
+           >> libraries  = names(cellfun(@(name)selectFcn(name,'library'),names))
+         Example: to find all annotations, in SYSTEM use
+           >> annotations = <strong>find_system</strong>(SYSTEM,'FindAll','on','Type','annotation')
+ 
+    'FollowLinks', 'off' (default) | 'on'
+         If 'on', resolve and search library links.
+         If 'off', library links are treated as individual blocks and search will not descend
+         beneath them.
+ 
+    'LookUnderMasks', 'graphical' (default) | 'off' / 'none' | 'functional' | 'on' / 'all'
+         Constrains the search from looking into different types of masked subsystems. A masked
+         block consists can consist of up to three items: icon drawing commands,
+         parameters & dialog, initialization commands which create a mask workspace.
+         See HASMASKICON, HASMASKDLG, HASMASK.
+ 
+         * 'graphical'     : Search inside masked subsystems with only icon drawing commands.
+         * 'off' or 'none' : Do not search inside masked subsystems.
+         * 'functional'    : Search inside masked subsystems with icon drawing commands and/or a
+                             workspace created by the initialization commands.
+         * 'on' or 'all'   : Search inside all masked subsystems.
+ 
+         Example: to find all blocks including masked blocks, in SYSTEM use
+           >> <strong>find_system</strong>(SYSTEM,'LookUnderMasks','on','FollowLinks','on')
+ 
+    'LoadFullyIfNeeded', 'on' (default) | 'off'
+         If 'on', fully load any partially loaded block diagrams. By default, block diagram
+         libraries are partially loaded to resolve library links. When <strong>find_system</strong> searches them,
+         it will finish loading the library.
+ 
+    'IncludeCommented', 'off' (default) | 'on'
+         If 'on', include commented blocks in the search.
+ 
+    'CaseSensitive', 'on' (default) | 'off'
+         If 'on' values of object parameter constraints are case sensitive.
+         If 'off' values of object parameter constraints are not case sensitive.
+         Example: to find all blocks whose name is 'Gain' in SYSTEM, use
+           >> <strong>find_system</strong>(SYSTEM,'Name','Gain')  % or equivalently
+           >> <strong>find_system</strong>(SYSTEM,'CaseSensitive','on','Name','Gain')
+         Example: to find all blocks whose name is 'gain', ignoring case, in SYSTEM use
+           >> <strong>find_system</strong>(SYSTEM,'CaseSensitive','off','Name','gain')
+ 
+    'RegExp', 'off' (default) | 'on'
+         If 'on', the VALUE of the object parameter constraints is a MATLAB regexp.
+         Example: to find all block types that have 'port' in the type,
+            e.g. Inport, Outport, etc. use
+            >> <strong>find_system</strong>(SYSTEM,'RegExp','on','BlockType','port')
+         Example: to find all blocks whose name start with an 'x' in SYSTEM, use
+            >> <strong>find_system</strong>(SYSTEM,'Regexp','on','Name','^x')
+         Example: to find all block names starting with 'gain' ignoring case and optionally 
+            followed by a number, use
+            >> <strong>find_system</strong>(SYSTEM,'RegExp','on','Name','^(?i:gain)\d*$')
+ 
+    'MatchFilter', @fcn
+         Select model elements using @fcn, a function handle, which is invoked by <strong>find_system</strong>.
+         <strong>find_system</strong> traverses the Simulink block diagram starting at SYSTEM. Using @fcn you 
+         can process each element that is seen during the traversal. @fcn should return match
+         set to true if the element is to be returned by <strong>find_system</strong>. @fcn should set prune 
+         to false if that branch (subsystem) of the tree should be trimmed from the search.
+         
+         [match, prune] = fcn(element)
+            element - Handle of the model element (block, line, annotation) being processed.
+            match   - Logical. If false, do not return the element in the <strong>find_system</strong> answer.
+            prune   - Optional logical (default false). If true, skip search of the current
+                      element, which only applies to subsystems.
+ 
+         Example: to find all Gain blocks with gain value in between 5 to 10 use:
+            function [match] = gainFiveToTen(el)
+                match = false;
+                if strcmp(get_param(el,'Type'),'block') && strcmp(get_param(el,'BlockType'),'Gain')
+                    gainValue = str2double(get_param(el, 'Gain'));
+                    match = gainValue >= 5 && gainValue <= 10;
+                end
+            end
+            >> <strong>find_system</strong>(SYSTEM,'MatchFilter',@gainFiveToTen);
+ 
+         Variants
+           Simulink provides the following post-compile match filters for variant block processing:
+  
+           @Simulink.match.activeVariants      : match blocks which are active in simulation.
+           @Simulink.match.codeCompileVariants : match blocks which are part of generated code.
+           @Simulink.match.allVariants         : match all blocks, irrespective of whether the block
+                                                 is active or inactive due to variants.
+ 
+           Example: to find all blocks active in simulation use
+             >> set_param(SYSTEM, 'SimulationCommand', 'update');
+             >> <strong>find_system</strong>(SYSTEM, 'MatchFilter', @Simulink.match.activeVariants);
+ 
+           Example: to find blocks that will be in the generated code, use
+             >> MODEL([],[],[],'compileForCodegen')
+             >> <strong>find_system</strong>(MODEL, 'MatchFilter', @Simulink.match.codeCompileVariants);
+             >> MODEL([],[],[],'term')
+ 
+           Example: to find all blocks
+             >> <strong>find_system</strong>(SYSTEM, 'MatchFilter', @Simulink.match.allVariants);
+ 
+    'Variants', 'ActiveVariants' (default) | 'AllVariants' | 'ActivePlusCodeVariants'
+         Constrains the search from looking into Variant Subsystems
+           - 'ActiveVariants' : Search in only the active choices
+           - 'AllVariants' : Search in all variant choices
+           - 'ActivePlusCodeVariants' : Search all choices of variant subsystems with 
+             'VariantActivationTime' set to 'code compile', otherwise search in only the 
+             active variants choices.
+ 
+         The 'Variants' constraint applies only to Variant Subsystems that have the
+         VariantControlMode set to 'expression' or 'label'. Use the 
+         <strong>find_system</strong> function with the MatchFilter option to operate on all 
+         types of variant blocks.
+  
+    Object parameter CONSTRAINT, VALUE pairs:
+    ----------------------------------------
+    Object parameter constraints must come *after* the above general constraints.
+ 
+    'BlockDialogParams', 'VALUE'
+         Return blocks which have a block dialog parameter that contains the specified value.
+         Example: to find all blocks that have the string 'k' specified in one or more of its
+           block dialog parameters, use
+           >> <strong>find_system</strong>(SYSTEM,'BlockDialogParams','k')
+ 
+    'PARAMETER', 'VALUE'
+         All other constraints correspond to object parameters and that must match the specified
+         value. If the object doesn't have the specified parameter, the constraint is not
+         satisfied, and the object will not be returned.
+         Example: to find all blocks who have a parameter named 'ExternalReset' and whose value
+           is 'none', use
+           >> <strong>find_system</strong>(SYSTEM,'ExternalReset','none')
+         Example: to find all Gain blocks whose block name is Gain1 in SYSTEM, use
+           >> <strong>find_system</strong>(SYSTEM,'Name','Gain1','BlockType','Gain')
+         Example: to find all blocks in SYSTEM whose foreground color is black, use
+           >> <strong>find_system</strong>(SYSTEM,'ForegroundColor','black')
+         Example: to find all Gain blocks that have the value '1' in SYSTEM, use
+           >> gainBlocks = <strong>find_system</strong>(SYSTEM,'BlockType','Gain')
+           >> gainsWithValue1 = <strong>find_system</strong>(gainBlocks,'Gain','1')
+ 
+    See also <a href="matlab:help set_param -displayBanner">set_param</a>, <a href="matlab:help get_param -displayBanner">get_param</a>
+
+    <a href="matlab:doc find_system">Documentation for find_system</a>
+    <a href="matlab:matlab.lang.internal.introspective.overloads.displayOverloads('find_system')">Other uses of find_system</a>
+
+save all
+[Warning: While saving an object of class 'target.APIImplementation':
+A target.APIImplementation object cannot be saved in a MAT-file. Use <a href="matlab:help target.add">target.add</a> to control persistence
+of data across MATLAB sessions or <a href="matlab:help target.export">target.export</a> to share target objects.] 
+[Warning: While saving an object of class 'target.APIImplementation':
+A target.APIImplementation object cannot be saved in a MAT-file. Use <a href="matlab:help target.add">target.add</a> to control persistence
+of data across MATLAB sessions or <a href="matlab:help target.export">target.export</a> to share target objects.] 
+diary off
+session_log
+
+session_log =
+
+    'sfunction_setup.log'
+
+edit d.m
+datetime
+
+ans = 
+
+  <a href="matlab:helpPopup('datetime')" style="font-weight:bold">datetime</a>
+
+   13-Aug-2024 23:25:11
+
+help(datetime)
+--- help for <strong>datetime</strong> ---
+
+ <strong>datetime</strong> Arrays to represent dates and times.
+    datetime arrays store values that represent points in time, including a date
+    and a time of day. Use the <strong>datetime</strong> constructor to create an array of datetimes
+    from strings, character vectors, or from vectors of date/time components.
+    Use <strong>datetime</strong>('now'), <strong>datetime</strong>('today'), <strong>datetime</strong>('yesterday'), or <strong>datetime</strong>('tomorrow')
+    to create scalar datetimes at or around the current moment.
+ 
+    You can subscript and manipulate datetime arrays just like ordinary numeric
+    arrays. Datetime arrays also support sorting and comparison, mathematical
+    calculations, as well as operations involving date and time components.
+ 
+    Each element of a datetime array represents one point in time. Use a
+    duration array to represent lengths of time in fixed-length time units.
+    Use a calendarDuration array to represent lengths of time in terms of
+    flexible-length calendar units.
+ 
+    A datetime array T has properties that store metadata, such as the display
+    format, and properties that allow you to access and modify the array's
+    values via its date/time components. Access or assign to a property using
+    P = T.PropName or T.PropName = P, where PropName is one of the following:
+ 
+    <strong>datetime</strong> properties:
+        <a href="matlab:help datetime/Format -displayBanner">Format</a>   - A character vector or string scalar describing the
+                   format in which the array's values display.
+        <a href="matlab:help datetime/TimeZone -displayBanner">TimeZone</a> - A string scalar, duration scalar, or character vector
+                   representing the time zone in which the array's values
+                   are interpreted.
+        <a href="matlab:help datetime/Year -displayBanner">Year</a>     - An array containing each element's year number.
+        <a href="matlab:help datetime/Month -displayBanner">Month</a>    - An array containing each element's month number.
+        <a href="matlab:help datetime/Day -displayBanner">Day</a>      - An array containing each element's day of month number.
+        <a href="matlab:help datetime/Hour -displayBanner">Hour</a>     - An array containing each element's hour.
+        <a href="matlab:help datetime/Minute -displayBanner">Minute</a>   - An array containing each element's minute.
+        <a href="matlab:help datetime/Second -displayBanner">Second</a>   - An array containing each element's second, including a
+                   fractional part.
+ 
+    <strong>datetime</strong> methods and functions:
+      Creating arrays of datetimes:
+        <a href="matlab:help datetime/datetime -displayBanner">datetime</a>           - Create an array of datetimes.
+        <a href="matlab:help datetime/isdatetime -displayBanner">isdatetime</a>         - True for a array of datetimes.
+      Extract date and time components:
+        <a href="matlab:help datetime/ymd -displayBanner">ymd</a>                - Year, month, and day numbers of datetimes.
+        <a href="matlab:help datetime/hms -displayBanner">hms</a>                - Hour, minute, and second numbers of datetimes.
+        <a href="matlab:help datetime/year -displayBanner">year</a>               - Year numbers of datetimes.
+        <a href="matlab:help datetime/quarter -displayBanner">quarter</a>            - Quarter numbers of datetimes.
+        <a href="matlab:help datetime/month -displayBanner">month</a>              - Month numbers or names of datetimes.
+        <a href="matlab:help datetime/week -displayBanner">week</a>               - Week numbers of datetimes.
+        <a href="matlab:help datetime/day -displayBanner">day</a>                - Day numbers or names of datetimes.
+        <a href="matlab:help datetime/hour -displayBanner">hour</a>               - Hour numbers of datetimes.
+        <a href="matlab:help datetime/minute -displayBanner">minute</a>             - Minute numbers of datetimes.
+        <a href="matlab:help datetime/second -displayBanner">second</a>             - Second numbers of datetimes.
+        <a href="matlab:help datetime/timeofday -displayBanner">timeofday</a>          - Elapsed time since midnight for datetimes.
+        <a href="matlab:help datetime/tzoffset -displayBanner">tzoffset</a>           - Time zone offset of datetimes.
+        <a href="matlab:help datetime/isdst -displayBanner">isdst</a>              - True for datetimes occurring during Daylight Saving Time.
+        <a href="matlab:help datetime/isweekend -displayBanner">isweekend</a>          - True for datetimes occurring on a weekend.
+      Calendar calculations with datetimes:
+        <a href="matlab:help datetime/dateshift -displayBanner">dateshift</a>          - Shift datetimes or generate sequences according to a calendar rule.
+        <a href="matlab:help datetime/between -displayBanner">between</a>            - Difference between datetimes as calendar durations.
+        <a href="matlab:help datetime/caldiff -displayBanner">caldiff</a>            - Successive differences between datetimes as calendar durations.
+      Mathematical calculations with datetimes:
+        <a href="matlab:help datetime/plus -displayBanner">plus</a>               - Datetime addition.
+        <a href="matlab:help datetime/minus -displayBanner">minus</a>              - Datetime subtraction.
+        <a href="matlab:help datetime/diff -displayBanner">diff</a>               - Successive differences between datetimes as durations.
+        <a href="matlab:help datetime/colon -displayBanner">colon</a>              - Create equally-spaced sequence of datetimes.
+        <a href="matlab:help datetime/linspace -displayBanner">linspace</a>           - Create equally-spaced sequence of datetimes.
+        <a href="matlab:help datetime/mean -displayBanner">mean</a>               - Mean of datetimes.
+        <a href="matlab:help datetime/median -displayBanner">median</a>             - Median of datetimes.
+        <a href="matlab:help datetime/mode -displayBanner">mode</a>               - Most frequent datetime value.
+        <a href="matlab:help datetime/isnat -displayBanner">isnat</a>              - True for datetimes that are Not-a-Time.
+        <a href="matlab:help datetime/isinf -displayBanner">isinf</a>              - True for datetimes that are +Inf or -Inf.
+        <a href="matlab:help datetime/isfinite -displayBanner">isfinite</a>           - True for datetimes that are finite.
+      Comparisons between datetimes:
+        <a href="matlab:help datetime/eq -displayBanner">eq</a>                 - Equality comparison for datetimes.
+        <a href="matlab:help datetime/ne -displayBanner">ne</a>                 - Not-equality comparison for datetimes.
+        <a href="matlab:help datetime/lt -displayBanner">lt</a>                 - Less than comparison for datetimes.
+        <a href="matlab:help datetime/le -displayBanner">le</a>                 - Less than or equal comparison for datetimes.
+        <a href="matlab:help datetime/ge -displayBanner">ge</a>                 - Greater than or equal comparison for datetimes.
+        <a href="matlab:help datetime/gt -displayBanner">gt</a>                 - Greater than comparison for datetimes.
+        <a href="matlab:help datetime/isbetween -displayBanner">isbetween</a>          - Determine if datetimes are contained in an interval.
+        <a href="matlab:help datetime/min -displayBanner">min</a>                - Find minimum of datetimes.
+        <a href="matlab:help datetime/max -displayBanner">max</a>                - Find maximum of datetimes.
+        <a href="matlab:help datetime/sort -displayBanner">sort</a>               - Sort datetimes.
+        <a href="matlab:help datetime/sortrows -displayBanner">sortrows</a>           - Sort rows of a datetime array.
+        <a href="matlab:help datetime/issorted -displayBanner">issorted</a>           - True for sorted datetime vectors and matrices.
+      Set membership:
+        <a href="matlab:help datetime/intersect -displayBanner">intersect</a>          - Find datetimes common to two arrays.
+        <a href="matlab:help datetime/ismember -displayBanner">ismember</a>           - Find datetimes in one array that occur in another array.
+        <a href="matlab:help datetime/setdiff -displayBanner">setdiff</a>            - Find datetimes that occur in one array but not in another.
+        <a href="matlab:help datetime/setxor -displayBanner">setxor</a>             - Find datetimes that occur in one or the other of two arrays, but not both.
+        <a href="matlab:help datetime/unique -displayBanner">unique</a>             - Find unique datetimes in an array.
+        <a href="matlab:help datetime/union -displayBanner">union</a>              - Find datetimes that occur in either of two arrays.
+      Plotting:
+        <a href="matlab:help plot -displayBanner">plot</a>               - Plot datetimes.
+      Conversion to other numeric representations:
+        <a href="matlab:help datetime/convertTo -displayBanner">convertTo</a>          - Convert datetimes to numeric time representation.
+        <a href="matlab:help datetime/exceltime -displayBanner">exceltime</a>          - Convert datetimes to Excel serial day numbers.
+        <a href="matlab:help datetime/posixtime -displayBanner">posixtime</a>          - Convert datetimes to Posix time values.
+        <a href="matlab:help datetime/juliandate -displayBanner">juliandate</a>         - Convert datetimes to Julian dates.
+        <a href="matlab:help datetime/yyyymmdd -displayBanner">yyyymmdd</a>           - Convert datetimes to YYYYMMDD numeric values.
+        <a href="matlab:help datetime/datevec -displayBanner">datevec</a>            - Convert datetimes to date vectors.
+      Conversion to text:
+        <a href="matlab:help datetime/cellstr -displayBanner">cellstr</a>            - Convert datetimes to cell array of character vectors.
+        <a href="matlab:help datetime/char -displayBanner">char</a>               - Convert datetimes to character matrix.
+        <a href="matlab:help datetime/string -displayBanner">string</a>             - Convert datetimes to strings.
+ 
+    Examples:
+ 
+       % Create a datetime array for the first 5 months in 2014.
+       t1 = datetime(2014,1:5,1)
+ 
+       % Add a random number of calendar days to each datetime. Extract
+       % the day component.
+       t1 = t1 + caldays(randi([0 15],1,5))
+       day = t1.Day
+ 
+       % Add a random amount of time to each datetime.
+       t1 = t1 + hours(rand(1,5))
+ 
+       % Shift each datetime to the end of its month.
+       t2 = dateshift(t1,'end','month')
+ 
+       % Find the time difference in hours/minutes/seconds between the two
+       % sets of datetimes.
+       d = t2 - t1
+ 
+       % Find the calendar time difference between the two sets of datetimes.
+       d2 = between(t1,t2)
+ 
+    See also <a href="matlab:help datetime/datetime -displayBanner">datetime</a>, <a href="matlab:help duration -displayBanner">duration</a>.
+
+    <a href="matlab:doc datetime">Documentation for datetime</a>
+
+help datetime/Format -displayBanner
+--- help for <strong>datetime/Format</strong> ---
+
+ <strong>Format</strong> Display format property for datetime arrays.
+    The <strong>Format</strong> property specifies the format used to display the datetimes in
+    the array. This property is a character vector constructed using the characters
+    A-Z and a-z to represent date and time components of the datetimes. See the
+    <a href="matlab:doc('datetime.Format')">datetime.Format property reference page</a> for the complete specification.
+ 
+    Changing the display format does not change the datetime values in the
+    array, only their display.
+ 
+    The factory setting for the default value when you create a datetime array
+    is locale-dependent. For information on how to change the default in
+    the Preferences dialog box, see <a href="matlab:helpview('matlab','matlab_env_commandwindow_prefs')">Set Command Window Preferences</a>. Datetime
+    arrays whose time zone is set to 'UTCLeapSeconds' must use the format
+    'uuuu-MM-dd''T''HH:mm:ss[.SSS]Z', where from 0 to 9 fractional seconds
+    digits can be specified.
+ 
+    See also <a href="matlab:help datetime -displayBanner">datetime</a>.
+
+    <a href="matlab:doc datetime/Format">Documentation for datetime/Format</a>
+
+doc('datetime.Format')
+datetime('yyyyMMdd_HHmmss')
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 667)" style="font-weight:bold">datetime</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',667,0)">line 667</a>)
+Could not recognize the date/time format of 'yyyyMMdd_HHmmss'. You can specify a format using
+the 'InputFormat' parameter. If the date/time text contains day, month, or time zone names in a
+language foreign to the 'en_US' locale, those might not be recognized. You can specify a
+different locale using the 'Locale' parameter.
+} 
+datetime('now','yyyyMMdd_HHmmss')
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 563)" style="font-weight:bold">datetime</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',563,0)">line 563</a>)
+Incorrect number of arguments.
+} 
+datetime('now',Format='yyyyMMdd_HHmmss')
+
+ans = 
+
+  <a href="matlab:helpPopup('datetime')" style="font-weight:bold">datetime</a>
+
+   20240813_233036
+
+datetime('now',Format='yyMMdd_HHmmss')
+
+ans = 
+
+  <a href="matlab:helpPopup('datetime')" style="font-weight:bold">datetime</a>
+
+   240813_233059
+
+datetime('now',Format='yyMMdd_HHmm')
+
+ans = 
+
+  <a href="matlab:helpPopup('datetime')" style="font-weight:bold">datetime</a>
+
+   240813_2331
+
+datetime('now',Format='yyMMdd_HHmm')
+
+ans = 
+
+  <a href="matlab:helpPopup('datetime')" style="font-weight:bold">datetime</a>
+
+   240813_2331
+
+datetime('now',Format='yyyyMMdd_HHmm')
+
+ans = 
+
+  <a href="matlab:helpPopup('datetime')" style="font-weight:bold">datetime</a>
+
+   20240813_2331
+
+help diary
+ <strong>diary</strong> Save text of MATLAB session.
+    <strong>diary</strong> FILENAME causes a copy of all subsequent command window input
+    and most of the resulting command window output to be appended to the
+    named file.  If no file is specified, the file 'diary' is used.
+ 
+    <strong>diary</strong> OFF suspends it. 
+    <strong>diary</strong> ON turns it back on.
+    <strong>diary</strong>, by itself, toggles the diary state.
+ 
+    Use the functional form of <strong>diary</strong>, such as <strong>diary</strong>('file'),
+    when the file name is stored in a string.
+ 
+    See also <a href="matlab:help save -displayBanner">save</a>.
+
+    <a href="matlab:doc diary">Documentation for diary</a>
+    <a href="matlab:matlab.lang.internal.introspective.overloads.displayOverloads('diary')">Other uses of diary</a>
+
+doc diary
+edit functionSignatures.m
+edit functionSignatures.json
+ls
+d.m				redisSfunction_makecfg.m	sfunction_setup.log
+
+ls ..
+S-function-examples	docs			hiredis			mex_Wrapper_Functions
+build_tools		golden_files		matlab.mat		sfunctionSetup.mat
+
+mkdir ../logs
+help diary
+ <strong>diary</strong> Save text of MATLAB session.
+    <strong>diary</strong> FILENAME causes a copy of all subsequent command window input
+    and most of the resulting command window output to be appended to the
+    named file.  If no file is specified, the file 'diary' is used.
+ 
+    <strong>diary</strong> OFF suspends it. 
+    <strong>diary</strong> ON turns it back on.
+    <strong>diary</strong>, by itself, toggles the diary state.
+ 
+    Use the functional form of <strong>diary</strong>, such as <strong>diary</strong>('file'),
+    when the file name is stored in a string.
+ 
+    See also <a href="matlab:help save -displayBanner">save</a>.
+
+    <a href="matlab:doc diary">Documentation for diary</a>
+    <a href="matlab:matlab.lang.internal.introspective.overloads.displayOverloads('diary')">Other uses of diary</a>
+
+d
+[Warning: The format 'yyyyMMdd_HHMM' contains a field for month (M) in what appears to be a time
+portion. You might have intended to use the symbol for minute (m) rather than for month (M).
+See the <a href="matlab:doc('datetime.Format')">datetime.Format property</a> for a complete description of the identifiers used in datetime
+formats.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyFormat', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m', 34)" style="font-weight:bold">verifyFormat</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m',34,0)">line 34</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 598)" style="font-weight:bold">datetime</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',598,0)">line 598</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 2)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',2,0)">line 2</a>)
+] 
+{Unrecognized function or variable 'diary_path'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 9)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',9,0)">line 9</a>)
+  if diary_path
+} 
+d
+[Warning: The format 'yyyyMMdd_HHMM' contains a field for month (M) in what appears to be a time
+portion. You might have intended to use the symbol for minute (m) rather than for month (M). See
+the <a href="matlab:doc('datetime.Format')">datetime.Format property</a> for a complete description of the identifiers used in datetime
+formats.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyFormat', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m', 34)" style="font-weight:bold">verifyFormat</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m',34,0)">line 34</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 598)" style="font-weight:bold">datetime</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',598,0)">line 598</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 2)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',2,0)">line 2</a>)
+] 
+{Unrecognized function or variable 'diary_path'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 9)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',9,0)">line 9</a>)
+  if exists(diary_path, 'var')
+} 
+d
+[Warning: The format 'yyyyMMdd_HHMM' contains a field for month (M) in what appears to be a time
+portion. You might have intended to use the symbol for minute (m) rather than for month (M). See
+the <a href="matlab:doc('datetime.Format')">datetime.Format property</a> for a complete description of the identifiers used in datetime
+formats.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyFormat', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m', 34)" style="font-weight:bold">verifyFormat</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m',34,0)">line 34</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 598)" style="font-weight:bold">datetime</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',598,0)">line 598</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 2)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',2,0)">line 2</a>)
+] 
+{Incorrect number or types of inputs or outputs for function exists.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 9)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',9,0)">line 9</a>)
+  if exists('diary_path', 'var')
+} 
+d
+[Warning: The format 'yyyyMMdd_HHMM' contains a field for month (M) in what appears to be a time
+portion. You might have intended to use the symbol for minute (m) rather than for month (M). See
+the <a href="matlab:doc('datetime.Format')">datetime.Format property</a> for a complete description of the identifiers used in datetime
+formats.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('verifyFormat', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m', 34)" style="font-weight:bold">verifyFormat</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/private/verifyFormat.m',34,0)">line 34</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 598)" style="font-weight:bold">datetime</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',598,0)">line 598</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 2)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',2,0)">line 2</a>)
+] 
+d
+pwd
+
+ans =
+
+    '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools'
+
+contains(pwd, 'sfunction_clean/redis_connect_demo')
+
+ans =
+
+  <a href="matlab:helpPopup('logical')" style="font-weight:bold">logical</a>
+
+   1
+
+d
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('datetime/horzcat', '/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m', 1468)" style="font-weight:bold">datetime/horzcat</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/datatypes/datetime/@datetime/datetime.m',1468,0)">line 1468</a>)
+Unable to convert the text 'redcon_demo_' to a datetime value because its format was not
+recognized.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('d', '/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m', 6)" style="font-weight:bold">d</a> (<a href="matlab: opentoline('/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/build_tools/d.m',6,0)">line 6</a>)
+    logname = ['redcon_demo_' dt '.log'];
+} 
+d
+
+ans = 
+
+    "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/redis_connect_demo/logs/redcon_demo_20240814_0002.log"
+
+ls ..
+S-function-examples	golden_files		matlab.mat
+build_tools		hiredis			mex_Wrapper_Functions
+docs			logs			sfunctionSetup.mat
+
+date(dt)
+{Unrecognized function or variable 'dt'.
+} 
+date(d)
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('date')" style="font-weight:bold">date</a>
+Too many input arguments.
+} 
+date(d)
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('date')" style="font-weight:bold">date</a>
+Too many input arguments.
+} 
+d
+
+ans = 
+
+    "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/redis_connect_demo/logs/redcon_demo_20240814_0004.log"
+
+d
+
+ans = 
+
+    "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/logs/redcon_demo_20240814_0004.log"
+
+date(d)
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('date')" style="font-weight:bold">date</a>
+Too many input arguments.
+} 
+class(d)
+
+ans =
+
+    'string'
+
+d
+
+ans = 
+
+    "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/logs/redcon_demo_20240814_0005.log"
+
+d
+
+ans = 
+
+    "/Users/deshazere/General-Atomics/fusion/projects/IRAD-1340-API/redis-simulink/sfunction_clean/redis_connect_demo/logs/redcon_demo_20240814_0005.log"
+
+diary(d())

@@ -1,0 +1,83 @@
+movefile sfunction_setup.log ../logs/redcon_20240813_0930.log
+clear ans
+help simulink
+  <strong>Simulink</strong>
+  Version 24.1 (R2024a) 19-Nov-2023
+ 
+  Model analysis and construction functions.
+ 
+  Simulation
+    <a href="matlab:help sim -displayBanner">sim</a>              - Simulate a <strong>Simulink</strong> model.
+    <a href="matlab:help sldebug -displayBanner">sldebug</a>          - Debug a <strong>Simulink</strong> model.
+    <a href="matlab:help simset -displayBanner">simset</a>           - Define options to SIM Options structure.
+    <a href="matlab:help simget -displayBanner">simget</a>           - Get SIM Options structure.
+ 
+  Linearization and trimming.
+    <a href="matlab:help linmod -displayBanner">linmod</a>           - Extract linear model from continuous-time system.
+    <a href="matlab:help linmod2 -displayBanner">linmod2</a>          - Extract linear model, advanced method. 
+    <a href="matlab:help dlinmod -displayBanner">dlinmod</a>          - Extract linear model from discrete-time system.
+    <a href="matlab:help trim -displayBanner">trim</a>             - Find steady-state operating point.
+ 
+  Model Construction.
+    <a href="matlab:help close_system -displayBanner">close_system</a>     - Close open model or block.
+    <a href="matlab:help new_system -displayBanner">new_system</a>       - Create new empty model.
+    <a href="matlab:help open_system -displayBanner">open_system</a>      - Open existing model or block.
+    <a href="matlab:help load_system -displayBanner">load_system</a>      - Load existing model without making model visible.
+    <a href="matlab:help save_system -displayBanner">save_system</a>      - Save an open model.
+    <a href="matlab:help add_block -displayBanner">add_block</a>        - Add new block.
+    <a href="matlab:help add_line -displayBanner">add_line</a>         - Add new line. 
+    <a href="matlab:help delete_block -displayBanner">delete_block</a>     - Remove block.
+    <a href="matlab:help delete_line -displayBanner">delete_line</a>      - Remove line.
+    <a href="matlab:help find_system -displayBanner">find_system</a>      - Search a model.
+    <a href="matlab:help hilite_system -displayBanner">hilite_system</a>    - Hilite objects within a model.
+    <a href="matlab:help replace_block -displayBanner">replace_block</a>    - Replace existing blocks with a new block.
+    <a href="matlab:help set_param -displayBanner">set_param</a>        - Set parameter values for model or block.
+    <a href="matlab:help get_param -displayBanner">get_param</a>        - Get simulation parameter values from model.
+    <a href="matlab:help add_param -displayBanner">add_param</a>        - Add a user-defined string parameter to a model.
+    <a href="matlab:help delete_param -displayBanner">delete_param</a>     - Delete a user-defined parameter from a model.
+    <a href="matlab:help bdclose -displayBanner">bdclose</a>          - Close a <strong>Simulink</strong> window.
+    <a href="matlab:help bdroot -displayBanner">bdroot</a>           - Root level model name.
+    <a href="matlab:help gcb -displayBanner">gcb</a>              - Get the name of the current block.
+    <a href="matlab:help gcbh -displayBanner">gcbh</a>             - Get the handle of the current block.
+    <a href="matlab:help gcs -displayBanner">gcs</a>              - Get the name of the current system.
+    <a href="matlab:help getfullname -displayBanner">getfullname</a>      - Get the full path name of a block.
+    <a href="matlab:help addterms -displayBanner">addterms</a>         - Add terminators to unconnected ports.
+    <a href="matlab:help slhelp -displayBanner">slhelp</a>           - <strong>Simulink</strong> user's guide or block help.
+ 
+  Masking.
+    <a href="matlab:help hasmask -displayBanner">hasmask</a>          - Check for mask.
+    <a href="matlab:help hasmaskdlg -displayBanner">hasmaskdlg</a>       - Check for mask dialog.
+    <a href="matlab:help hasmaskicon -displayBanner">hasmaskicon</a>      - Check for mask icon.
+ 
+  Library.
+    <a href="matlab:help libinfo -displayBanner">libinfo</a>          - Get library information for a system.
+ 
+  Diagnostics.
+    <a href="matlab:help sllastdiagnostic -displayBanner">sllastdiagnostic</a> - Last diagnostic array.
+    <a href="matlab:help sllasterror -displayBanner">sllasterror</a>      - Last error array.
+    <a href="matlab:help sllastwarning -displayBanner">sllastwarning</a>    - Last warning array.
+    <a href="matlab:help sldiagnostics -displayBanner">sldiagnostics</a>    - Get block count and compile stats for a model.
+ 
+  Hardcopy and printing.
+    <a href="matlab:help frameedit -displayBanner">frameedit</a>        - Edit print frames for annotated model printouts.
+    <a href="matlab:help print -displayBanner">print</a>            - Print graph or <strong>Simulink</strong> system; or save graph to MATLAB file.
+    <a href="matlab:help printopt -displayBanner">printopt</a>         - Printer defaults.
+    <a href="matlab:help orient -displayBanner">orient</a>           - Set paper orientation.
+ 
+  See also <a href="matlab:help genfrd.Blocks -displayBanner">Blocks</a> and SIMDEMOS.
+
+
+simulink is both a directory and a function.
+
+ <strong>Simulink</strong> - Open <strong>Simulink</strong> Start Page
+    This MATLAB function opens the <strong>Simulink</strong> Start Page.
+
+    Syntax
+      <strong>Simulink</strong>
+
+    See also <a href="matlab:help start_simulink -displayBanner">start_simulink</a>, <a href="matlab:help slLibraryBrowser -displayBanner">slLibraryBrowser</a>
+
+    Introduced in <strong>Simulink</strong> before R2006a
+    <a href="matlab:doc simulink/simulink">Documentation for simulink</a>
+    <a href="matlab:doc simulink">Simulink Documentation</a>
+

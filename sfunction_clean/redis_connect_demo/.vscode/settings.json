@@ -1,0 +1,46 @@
+{
+    "C_Cpp.default.includePath": [
+        "/Applications/MATLAB_R2024a.app/extern/include",
+        "/usr/local/include",
+        "${default}"
+    ],
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.default.browse.path": [
+        "/Applications/MATLAB_R2024a.app/extern/include",
+        "${workspace}/hiredis",
+        "${workspace}"
+    ],
+    "editor.fontSize": 16,
+    "clangd.arguments": [
+        "-I/Applications/MATLAB_R2024a.app/extern/include",
+        "-I/usr/local/include"
+    ],
+    "clangd.fallbackFlags": [
+        "-I/usr/local/include"
+    ],
+    "files.associations": {
+        "*.ans": "ansi",
+        "*.Forthon3": "makefile",
+        "*.tcl": "shellscript",
+        "*.v": "shellscript",
+        "*.yaml": "yaml",
+        ".Xresources": "shellscript",
+        "XTerm": "shellscript",
+        "*.py": "python",
+        "_*": "shellscript",
+        "*rc": "ini",
+        "hiredis.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.o": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true
+    },
+    "explorerExclude.backup": {}
+}

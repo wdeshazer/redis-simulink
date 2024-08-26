@@ -1,73 +1,80 @@
-#include "hiredis.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include "mex.h"
+#include "redisConnectSrc.h"
 
-#define BUFSIZE 25
+void updateReStatus(reStatus* res, int num, const char* msg) {
+    res->status = num;
 
-typedef struct redisCredentials
-{
-  char* hostname;
-  char* ip;
-  char* port;
-  char* password;
-  int errStatus;
-} redisCredentials;
-
-
-redisCredentials getCredentials(const char* configPath) {
-    FILE *file;
-    char ip_address[BUFSIZE], port[BUFSIZE], password[BUFSIZE];
-
-    // Open the file in read mode
-    file = fopen(configPath, "r");
-    if (file == NULL) {
-        perror("Error opening file");
-        return 1;
+    if (res->message != NULL) {
+        free(res->message);
     }
 
-    redisCredentials rc;
-
-    // Read each line and store it in a separate variable
-    if (fgets(rc.hostname, BUFSIZE, file) == NULL) {
-        perror("Error reading hostname");
-        rc.errStatus = 1;
-        return rc;
+    if (msg != NULL) {
+        int length = strlen(msg);
+        res->message = malloc(length + 1);  // Allocate memory for the string plus null terminator
+        if (res->message != NULL) {
+            strcpy(res->message, msg);  // Copy the string
+        }
+    } else {
+        res->message = NULL;
     }
-    if (fgets(rc.port, BUFSIZE, file) == NULL) {
-        perror("Error reading port");
-        rc.errStatus = 1;
-        return rc;
-    }
-    if (fgets(rc.password, BUFSIZE, file) == NULL) {
-        perror("Error reading password");
-        rc.errStatus = 1;
-        return rc;
-    }
+}
 
-    // Close the file
-    fclose(file);
-
-    return rc;
+void string(char* varName, const char* fmt, const char* value) {
+  char buffer[BSMSG];
+  snprintf(buffer, BSMSG, fmt, value);
+  strcpy(varName, value);
 }
 
 
-extern redisContext* connectRedis(const char* configPath) {
+reCreds* getCredentials(const char* configPath) {
+  FILE *file;
+  reCreds *rc;
+
+  // Open the file in read mode
+  file = fopen(configPath, "r");
+  if (file == NULL) {
+    char* msg;
+    string(msg, "File open error: %s\n", configPath);
+    updateReStatus(rc->err, ERRFILEOPEN, msg);
+    return rc;
+  }
+
+  char *fieldnames[] = {"hostname", "port", "password"};
+  char *fields[3];
+
+  // Read each line and store it in a separate variable
+  int i;
+  for (i=0; i<=2; i++) {
+    if (fgets(fields[i], BSCRED, file) == NULL) {
+      char* msg;
+      string(msg, "Authentication Error: Error reading %s", fieldnames[i]);
+      updateReStatus(rc->err, ERRORAUTH, msg);
+      return rc;
+  };
+
+  strcpy(rc->hostname, fields[1]);
+  rc->port = atoi(fields[2]);
+  strcpy(rc->password, fields[3]);
+
+  // Close the file
+  fclose(file);
+
+  return rc;
+
+}
+
+redisContext* connectRedisSrc(const char* configPath) {
 
   redisContext *ctx;
-  redisReply *reply;
-  redisCredentials rc;
+  redisCreds* rc;
 
   rc = getCredentials(configPath);
 
-
-  if (rc.errStatus != 0) {
-    ctx->err = rc.errStatus;
+  if (rc->err->status != 0) {
+    ctx->err = rc->res->status;
     return ctx;
   }
 
-  ctx = redisConnect(rc.ip, rc.port);
-
+  ctx = redisConnect(rc->ip, rc.port);
 
   if (ctx->err == 0) {
     char *authorize = (char *)malloc(120 * sizeof(char));
@@ -78,10 +85,5 @@ extern redisContext* connectRedis(const char* configPath) {
   if (  reply->str > 0){
     printf("Error Authenticating. Please check your password");
   }
-
-}
-
-void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
-{
-    connectRedis(prhs);
+  return ctx;
 }
